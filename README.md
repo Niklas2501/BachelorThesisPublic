@@ -20,5 +20,5 @@ The project used the following hardware:
 * 64GB RAM
 * 2x ZOTAC GeForce GTX 1080 Ti (the source code expects that two graphics cards are available)
 
-# Data
+## Data
 Due to the high memory requirements, the raw data cannot be made available here. Therefore only the preprocessed data and the final trained neural network have been uploaded.
