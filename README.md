@@ -18,7 +18,7 @@ The project uses the following libraries:
 The project used the following hardware:
 * Intel(R) Core(TM) i9-7900X CPU @ 3.30GHz
 * 64GB RAM
-* 2x ZOTAC GeForce GTX 1080 Ti (the source code expects that two graphics cards are available)
+* 2x ZOTAC GeForce GTX 1080 Ti 11GB (the source code expects that two graphics cards are available)
 
 ## Data
 Due to the high memory requirements, the raw data cannot be made available here. Therefore only the preprocessed data and the final trained neural network have been uploaded.
