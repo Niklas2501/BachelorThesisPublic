@@ -107,4 +107,13 @@ venv.bak/
 .idea/
 
 # Additional directorys
+data/datasets/*
+!data/datasets/.gitkeep
+
+data/preprocessed_data_combined/*
+!data/preprocessed_data_combined/.gitkeep
+
 testing/
+
+
+*.pyc

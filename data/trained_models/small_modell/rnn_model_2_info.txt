@@ -1,0 +1,26 @@
+Used hyper parameters
+	'optimizer:num_epochs': 300000, # Trained for 1055000 Epochs
+	'model:num_batch_pairs': 64,
+	'uniwarp:length': 1024,
+	'uniwarp:rnn_encoder_layers': [128, 64, 48],  # [256, 128, 64],
+	'uniwarp:warp_nn_layers': [48, 16, 1],  # [64, 16, 1],
+	'uniwarp:eta': 0.0001,
+	'uniwarp:max_grad_norm': 10.0,
+	'uniwarp:lambda': 0.0,
+	'uniwarp:cnn_encoder_layers': [1024, 256, 64],
+	'uniwarp:cnn_kernel_lengths': [5, 5, 3],
+	'uniwarp:cnn_strides': [2, 1, 1],
+	'uniwarp:dropout_rate': 0.025,
+	'uniwarp:enable_batch_normalization': True,
+	'dataset:num_channels': 1
+
+Results:
+----------------------------------------------------
+Final Result:
+----------------------------------------------------
+Examples tested: 914
+Correctly classified: 841
+Accuracy: 0.9201312910284464
+Elapsed time: 114647.393686
+----------------------------------------------------"
+
