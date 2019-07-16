@@ -310,9 +310,9 @@ class Classifier(threading.Thread):
             self.result_producer = KafkaProducer(bootstrap_servers=config.get_connection(),
                                                  value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
-        self.examples_classified = 0
-        self.total_time_import = 0
-        self.total_time_classification = 0
+        self.nbr_classified = 0
+        self.t_time_import = 0
+        self.t_time_classification = 0
         self.total_diff = pd.Timedelta(0)
 
     def run(self):
@@ -358,22 +358,22 @@ class Classifier(threading.Thread):
 
                 classification_time = time.clock() - classification_start
 
-                self.examples_classified += 1
-                self.total_time_import += import_time
-                self.total_time_classification += classification_time
-                self.total_diff += pd.Timestamp.now() - end_timestamp
+                self.nbr_classified += 1
+                self.t_time_import += import_time
+                self.t_time_classification += classification_time
+                self.total_diff += (pd.Timestamp.now() - end_timestamp)
 
                 print('Classification result for the time interval from', time_start, 'to', time_end + ':')
 
                 table_data = [
                     ['\tLabel:', label],
                     ['\tDescription:', error_description],
-                    ['\tMean similarity:', mean_sim],
-                    ['\tTime for importing:', import_time],
-                    ['\tTime for classification:', classification_time],
-                    ['\tMean import time:', self.total_time_import / self.examples_classified],
-                    ['\tMean classification time:', self.total_time_classification / self.examples_classified],
-                    ['\tMean time difference:', str(self.total_diff / self.examples_classified)],
+                    ['\tMean similarity:', '{0:.4f}'.format(mean_sim)],
+                    ['\tTime for importing:', '{0:.4f}'.format(import_time)],
+                    ['\tTime for classification:', '{0:.4f}'.format(classification_time)],
+                    ['\tMean import time:', '{0:.4f}'.format(self.t_time_import / self.nbr_classified)],
+                    ['\tMean classification time:', '{0:.4f}'.format(self.t_time_classification / self.nbr_classified)],
+                    ['\tMean time span:', '{0:.4f}'.format(self.total_diff.total_seconds() / self.nbr_classified)],
                     ['\tExamples left in queue:', self.examples_to_classify.qsize()]
                 ]
 

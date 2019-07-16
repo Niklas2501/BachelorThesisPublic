@@ -70,7 +70,7 @@ class CNNWarpedSim(CNNSim):
     def __init__(self, hyper):
         CNNSim.__init__(self, hyper)
         self.name = 'CNNWarpedSim'
-        self.is_first_dist_pair_call = True
+        self.is_first_call = True
 
     # redefine the distance between a pair of instances
     def calc_distance_of_pair(self, pair_index):
@@ -78,18 +78,17 @@ class CNNWarpedSim(CNNSim):
         with tf.variable_scope("CNNWarpedSimDistPair") as scope:
 
             # unless it is the first call, then reuse the variables of the scope
-            if self.is_first_dist_pair_call:
-                self.is_first_dist_pair_call = False
+            if self.is_first_call:
+                self.is_first_call = False
             else:
                 scope.reuse_variables()
 
-                # self.architecture shape: length of time series x 2*batch_size x length of rnn output
-                # A and B are the two examples that form the pair with  a shape of T x K each,
-                # T = time indices and K = length of the context vector = num_units of the last LSMT-layer (see paper)
-                a = self.architecture[2 * pair_index, :, :]
-                b = self.architecture[2 * pair_index + 1, :, :]
-                # print('Shape of example', a.get_shape().as_list())
+            # self.architecture shape: length of time series x 2*batch_size x length of rnn output
+            # A and B are the two examples that form the pair with  a shape of T x K each,
+            # T the time indices and K the length of the context vecotr = num_units of the last LSMT-layer, see paper
 
+            with tf.device('/device:GPU:1'):
+                a = self.architecture[2 * pair_index, :, :]
                 # create an array with the indices of the times series
                 indices_a = tf.range(a.shape[0])
 
@@ -98,24 +97,21 @@ class CNNWarpedSim(CNNSim):
                 # result: [0,0,0,...,0,1,1,1,...,1,2,2,2,...,A.shape[0],A.shape[0],A.shape[0],...]
                 indices_a = tf.tile(indices_a, [a.shape[0]])
 
-                indices_b = tf.range(b.shape[0])
-                indices_b = tf.reshape(indices_b, [-1, 1])
-                indices_b = tf.tile(indices_b, [1, b.shape[0]])
-                indices_b = tf.reshape(indices_b, [-1])
-                # result: [0,1,2,...,B.shape[0],0,1,2,...,B.shape[0],0,1,2,...]
-
                 # gather the features for the indices
                 # values of A at index i are set to all positions where i is the value in idx_A
                 a_expanded = tf.gather(a, indices_a)
+
+            with tf.device('/device:GPU:0'):
+                b = self.architecture[2 * pair_index + 1, :, :]
+                indices_b = tf.range(b.shape[0])
+                indices_b = tf.reshape(indices_b, [-1, 1])
+                indices_b = tf.tile(indices_b, [1, b.shape[0]])
+
+                # result: [0,1,2,...,B.shape[0],0,1,2,...,B.shape[0],0,1,2,...]
+                indices_b = tf.reshape(indices_b, [-1])
                 b_expanded = tf.gather(b, indices_b)
 
-                # concatenate the two feature tensor to serve as the input for the warping weight neural network
-                # axis = 1 --> first dimension still length of T, concatinated by dimension of sim values
-                # Size: time series length ^ 2 -> Contains the concatinated feature vectors of all index combinations
-                ab_concat = tf.concat([a_expanded, b_expanded], axis=1, name='ConcatenatedPairwiseIndices')
-                # print('a ex', A_expanded.get_shape().as_list())
-                # print('b ex', B_expanded.get_shape().as_list())
-                # print('ab concat', AB_concat.get_shape().as_list())
+            with tf.device('/device:GPU:1'):
 
                 # original comment and variable name misleading
                 # like the paper stated this calculates the absolute distance (L1 norm)
@@ -128,8 +124,14 @@ class CNNWarpedSim(CNNSim):
                 smallest_abs_difference = tf.expand_dims(tf.reduce_mean(abs_distance, axis=1), axis=-1,
                                                          name='PairsDists')
 
-                # define the warping neural network
-                ffnn = ab_concat
+            with tf.device('/device:GPU:0'):
+
+                # concatenate the two feature tensor to serve as the input for the warping weight neural network
+                # axis = 1 --> first dimension still length of T, concatinated by dimension of sim values
+                # Size: time series length ^ 2 -> Contains the concatinated feature vectors of all index combinations
+                ffnn = tf.concat([a_expanded, b_expanded], axis=1, name='ConcatenatedPairwiseIndices')
+
+                # define the warping neural network with the concatenated examples as input
                 for num_units in self.hyper['uniwarp:warp_nn_layers']:
                     print('Adding Warping NN layer with ', num_units, 'neurons')
                     # Mind the variable overwriting --> added after each other
@@ -139,8 +141,9 @@ class CNNWarpedSim(CNNSim):
                 # a final linear layer for the warping weights output in [0, 1]
                 ffnn = tf.keras.layers.Dense(units=1, activation=tf.keras.activations.sigmoid)(ffnn)
 
+            with tf.device('/device:GPU:1'):
                 # The result of the pair distance is multiplied by the result of the wrapper function
-                warped_dists = tf.multiply(smallest_abs_difference, ffnn, name="WarpedSiameseRNN")
+                warped_dists = tf.multiply(smallest_abs_difference, ffnn, name="WarpedSiameseCNN")
 
-                # This is then minimized again
-                return tf.reduce_mean(warped_dists)
+            # This is then minimized again
+            return tf.reduce_mean(warped_dists)

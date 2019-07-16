@@ -126,12 +126,12 @@ class Configuration:
         ###
 
         # server information
-        self.ip = '192.168.1.10'
+        self.ip = 'localhost'  # '192.168.1.10'
         self.port = '9092'
 
         # set to true if using the fabric simulation
         # will read from the beginning of the topics, so the fabric simulation only has to be run once
-        self.testing_using_fabric_sim = False
+        self.testing_using_fabric_sim = True
 
         # settings for exporting the classification results back to kafka
 
@@ -267,7 +267,7 @@ class Configuration:
         self.cases_folder = '../data/cases/'
 
         # path and file name to the specific model that should be used for testing and live classification
-        self.model_file = self.models_folder + 'WarpedSiameseRNN_data_preprocessed_data_combined.ckpt-511'
+        self.model_file = self.models_folder + 'final_best_rnn'
 
         # define file names for all topics
         self.topic15File = self.pathPrefix + 'raw_data/txt15.txt'
