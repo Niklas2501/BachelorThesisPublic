@@ -1,11 +1,9 @@
 import contextlib
 import json
 import os
-import queue
-import sys
 import threading
 import time
-
+import multiprocessing
 import joblib
 import numpy as np
 import pandas as pd
@@ -297,7 +295,7 @@ class Classifier(threading.Thread):
 
     def __init__(self, config):
         super().__init__()
-        self.examples_to_classify = queue.Queue(50)
+        self.examples_to_classify = multiprocessing.Manager().Queue(10)
         self.config = config
         self.inferencer = None
         self.stop = False
@@ -311,8 +309,8 @@ class Classifier(threading.Thread):
                                                  value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
         self.nbr_classified = 0
-        self.t_time_import = 0
-        self.t_time_classification = 0
+        self.total_time_classification = 0
+        self.total_time_all = 0
         self.total_diff = pd.Timedelta(0)
 
     def run(self):
@@ -322,64 +320,66 @@ class Classifier(threading.Thread):
         config = self.config
 
         with self.tf_session:
+            try:
+                # classify element of the queue as long as the stop flag is not set by a interrupt
+                while not self.stop:
+                    classification_start = time.clock()
 
-            # classify element of the queue as long as the stop flag is not set by a interrupt
-            while not self.stop:
-                classification_start = time.clock()
+                    # get the next element in queue, wait if empty
+                    element = self.examples_to_classify.get(block=True)
 
-                # get the next element in queue, wait if empty
-                element = self.examples_to_classify.get(block=True)
+                    # extract information from the queue element
+                    example = element[0]
+                    time_start = element[1].strftime('%H:%M:%S')
+                    time_end = element[2].strftime('%H:%M:%S')
+                    start_time = element[3]
 
-                # check if element is stop signal send after user exited
-                if not isinstance(element, tuple):
-                    break
+                    # classify the example using knn and the neural network
+                    label, mean_sim = self.knn(example)
 
-                # extract information from the queue element
-                example = element[0]
-                start_timestamp = element[1]
-                end_timestamp = element[2]
-                import_time = element[3]
+                    error_description = config.get_error_description(label)
 
-                # classify the example using knn and the neural network
-                label, mean_sim = self.knn(example)
+                    if config.export_results_to_kafka and not self.stop:
+                        results = {'class_label': label,
+                                   'description': error_description,
+                                   'mean_similarity_of_k_best': mean_sim,
+                                   'time_interval_start': time_start,
+                                   'time_interval_end': time_end}
+                        self.result_producer.send(config.export_topic, results)
 
-                time_start = start_timestamp.strftime('%H:%M:%S')
-                time_end = end_timestamp.strftime('%H:%M:%S')
+                    classification_time = time.clock() - classification_start
+                    total_time_for_example = time.clock() - start_time
+                    time_span = (pd.Timestamp.now() - element[2])
 
-                error_description = config.get_error_description(label)
+                    self.nbr_classified += 1
+                    self.total_time_classification += classification_time
+                    self.total_time_all += total_time_for_example
+                    self.total_diff += time_span
 
-                if config.export_results_to_kafka and not self.stop:
-                    results = {'class_label': label,
-                               'description': error_description,
-                               'mean_similarity_of_k_best': mean_sim,
-                               'time_interval_start': time_start,
-                               'time_interval_end': time_end}
-                    self.result_producer.send(config.export_topic, results)
+                    if not self.stop:
+                        print('Classification result for the time interval from', time_start, 'to', time_end + ':')
 
-                classification_time = time.clock() - classification_start
+                        table_data = [
+                            ['\tLabel:', label],
+                            ['\tDescription:', error_description],
+                            ['\tMean similarity:', '{0:.4f}'.format(mean_sim)],
+                            ['\tClassification time:', '{0:.4f}'.format(classification_time)],
+                            ['\tTotal time:', '{0:.4f}'.format(total_time_for_example)],
+                            ['\tTime span:', '{0:.4f}'.format(time_span.total_seconds())],
+                            ['\tMean classification time:',
+                             '{0:.4f}'.format(self.total_time_classification / self.nbr_classified)],
+                            ['\tMean total time:', '{0:.4f}'.format(self.total_time_all / self.nbr_classified)],
+                            ['\tMean time span:',
+                             '{0:.4f}'.format(self.total_diff.total_seconds() / self.nbr_classified)],
+                            ['\tExamples left in queue:', self.examples_to_classify.qsize()]
+                        ]
 
-                self.nbr_classified += 1
-                self.t_time_import += import_time
-                self.t_time_classification += classification_time
-                self.total_diff += (pd.Timestamp.now() - end_timestamp)
+                        for row in table_data:
+                            print("{: <28} {: <28}".format(*row))
+                        print('')
 
-                print('Classification result for the time interval from', time_start, 'to', time_end + ':')
-
-                table_data = [
-                    ['\tLabel:', label],
-                    ['\tDescription:', error_description],
-                    ['\tMean similarity:', '{0:.4f}'.format(mean_sim)],
-                    ['\tTime for importing:', '{0:.4f}'.format(import_time)],
-                    ['\tTime for classification:', '{0:.4f}'.format(classification_time)],
-                    ['\tMean import time:', '{0:.4f}'.format(self.t_time_import / self.nbr_classified)],
-                    ['\tMean classification time:', '{0:.4f}'.format(self.t_time_classification / self.nbr_classified)],
-                    ['\tMean time span:', '{0:.4f}'.format(self.total_diff.total_seconds() / self.nbr_classified)],
-                    ['\tExamples left in queue:', self.examples_to_classify.qsize()]
-                ]
-
-                for row in table_data:
-                    print("{: <28} {: <28}".format(*row))
-                print('')
+            except BrokenPipeError or EOFError:
+                self.stop = True
 
     # k nearest neighbor implementation to select the class based on the k most similar training examples
     def knn(self, example: np.ndarray):
@@ -458,8 +458,10 @@ def main():
     print('\nCreating classifier ...')
     print('The classifier will use k=' + str(config.k_of_knn) + ' for the k-NN algorithm')
     print('The mean similarity output is calculated on the basis of the k most similar cases')
-    print('The mean time span is the the mean of the time span between the end timetamp of the')
-    print('interval and the current time right before the output.\n')
+    print('The time span is the time between the end timestamp of the')
+    print('interval and the current time right before the output.')
+    print('The total time is the time needed for the completely processing the example,')
+    print('including the time in the queue.\n')
 
     classifier.start()
 
@@ -481,10 +483,8 @@ def main():
             # normalize the data of the example
             example = normalise_dataframe(example, scalers)
 
-            import_time = time.clock() - start_time
-
             # create a queue element containing
-            element = (example, df.index[0], df.index[-1], import_time, start_time)
+            element = (example, df.index[0], df.index[-1], start_time)
 
             # add element to the queue of examples to classify
             classifier.examples_to_classify.put(element)
@@ -493,14 +493,13 @@ def main():
             for i in range(len(consumers)):
                 partition = TopicPartition(config.topic_list[i], 0)
                 last_offset = consumers[i].position(partition)
-                consumers[i].seek(partition, last_offset - 2)
+                new_offset = last_offset - 2 if last_offset - 2 >= 0 else 0
+                consumers[i].seek(partition, new_offset)
 
     except KeyboardInterrupt:
-
-        # when interrupted classification is stopped after the current one is finished
-        print('Exiting, finishing last classification ...\n')
+        # interrupt the classifier thread
+        print('Exiting ...\n')
         classifier.stop = True
-        classifier.examples_to_classify.put('kill')
 
 
 # python script that handles the live classification

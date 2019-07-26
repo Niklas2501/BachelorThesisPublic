@@ -1,0 +1,4593 @@
+/home/fischertechnik/ba_2019_weingarz/py3-interpreter-tf2/bin/python /home/fischertechnik/ba_2019_weingarz/git/BachelorThesis/ba_weingarz_source/neural_network/inference.py
+Shape of training set: (8225, 250, 58) Shape of test set: (914, 250, 58)
+Add CNN layer Tensor("CNNEncoder/Relu:0", shape=(128, 123, 1024), dtype=float32) with filter size  5
+Add CNN layer Tensor("CNNEncoder/Relu_1:0", shape=(128, 119, 256), dtype=float32) with filter size  5
+Add CNN layer Tensor("CNNEncoder/Relu_2:0", shape=(128, 117, 64), dtype=float32) with filter size  3
+Adding Warping NN layer with  64 neurons
+Adding Warping NN layer with  16 neurons
+Adding Warping NN layer with  1 neurons
+The model has 1670179 parameters
+
+Ensure right model file is used:
+../data/trained_models/CNNWarpedSim_data_preprocessed_data_combined.ckpt-3718 
+
+Example: 1 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.60132366
+	Correctly classified examples: 1
+	Current accuracy: 1.0
+
+Example: 2 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98535407
+	Correctly classified examples: 2
+	Current accuracy: 1.0
+
+Example: 3 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9961665
+	Correctly classified examples: 3
+	Current accuracy: 1.0
+
+Example: 4 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98560756
+	Correctly classified examples: 4
+	Current accuracy: 1.0
+
+Example: 5 / 914
+	Classified as: txt16_i4 Correct class: txt16_i4 Similarity: 8.1259295e-06
+	Correctly classified examples: 5
+	Current accuracy: 1.0
+
+Example: 6 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8238607
+	Correctly classified examples: 6
+	Current accuracy: 1.0
+
+Example: 7 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99635774
+	Correctly classified examples: 7
+	Current accuracy: 1.0
+
+Example: 8 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9661726
+	Correctly classified examples: 8
+	Current accuracy: 1.0
+
+Example: 9 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9846435
+	Correctly classified examples: 9
+	Current accuracy: 1.0
+
+Example: 10 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9759184
+	Correctly classified examples: 10
+	Current accuracy: 1.0
+
+Example: 11 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99366575
+	Correctly classified examples: 11
+	Current accuracy: 1.0
+
+Example: 12 / 914
+	Classified as: txt_18_comp_leak Correct class: txt16_m3_t1_low_wear Similarity: 3.0947158e-11
+	Correctly classified examples: 11
+	Current accuracy: 0.9166666666666666
+
+Example: 13 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9968357
+	Correctly classified examples: 12
+	Current accuracy: 0.9230769230769231
+
+Example: 14 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7485626
+	Correctly classified examples: 13
+	Current accuracy: 0.9285714285714286
+
+Example: 15 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95109135
+	Correctly classified examples: 14
+	Current accuracy: 0.9333333333333333
+
+Example: 16 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9838938
+	Correctly classified examples: 15
+	Current accuracy: 0.9375
+
+Example: 17 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 0.00044636542
+	Correctly classified examples: 15
+	Current accuracy: 0.8823529411764706
+
+Example: 18 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.85523504
+	Correctly classified examples: 16
+	Current accuracy: 0.8888888888888888
+
+Example: 19 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9943914
+	Correctly classified examples: 17
+	Current accuracy: 0.8947368421052632
+
+Example: 20 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9333232
+	Correctly classified examples: 18
+	Current accuracy: 0.9
+
+Example: 21 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98157454
+	Correctly classified examples: 19
+	Current accuracy: 0.9047619047619048
+
+Example: 22 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 2.7096653e-17
+	Correctly classified examples: 20
+	Current accuracy: 0.9090909090909091
+
+Example: 23 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93031967
+	Correctly classified examples: 21
+	Current accuracy: 0.9130434782608695
+
+Example: 24 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.9523956
+	Correctly classified examples: 21
+	Current accuracy: 0.875
+
+Example: 25 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94420034
+	Correctly classified examples: 22
+	Current accuracy: 0.88
+
+Example: 26 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9264222
+	Correctly classified examples: 23
+	Current accuracy: 0.8846153846153846
+
+Example: 27 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.025454415
+	Correctly classified examples: 24
+	Current accuracy: 0.8888888888888888
+
+Example: 28 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9731086
+	Correctly classified examples: 25
+	Current accuracy: 0.8928571428571429
+
+Example: 29 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99484307
+	Correctly classified examples: 26
+	Current accuracy: 0.896551724137931
+
+Example: 30 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9947302
+	Correctly classified examples: 27
+	Current accuracy: 0.9
+
+Example: 31 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9840171
+	Correctly classified examples: 28
+	Current accuracy: 0.9032258064516129
+
+Example: 32 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97577375
+	Correctly classified examples: 29
+	Current accuracy: 0.90625
+
+Example: 33 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98986423
+	Correctly classified examples: 30
+	Current accuracy: 0.9090909090909091
+
+Example: 34 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9961111
+	Correctly classified examples: 31
+	Current accuracy: 0.9117647058823529
+
+Example: 35 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9692544
+	Correctly classified examples: 32
+	Current accuracy: 0.9142857142857143
+
+Example: 36 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9262298
+	Correctly classified examples: 33
+	Current accuracy: 0.9166666666666666
+
+Example: 37 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8444436
+	Correctly classified examples: 34
+	Current accuracy: 0.918918918918919
+
+Example: 38 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9824432
+	Correctly classified examples: 35
+	Current accuracy: 0.9210526315789473
+
+Example: 39 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99620134
+	Correctly classified examples: 36
+	Current accuracy: 0.9230769230769231
+
+Example: 40 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.80483
+	Correctly classified examples: 37
+	Current accuracy: 0.925
+
+Example: 41 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95723546
+	Correctly classified examples: 38
+	Current accuracy: 0.926829268292683
+
+Example: 42 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8304368
+	Correctly classified examples: 39
+	Current accuracy: 0.9285714285714286
+
+Example: 43 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96929795
+	Correctly classified examples: 40
+	Current accuracy: 0.9302325581395349
+
+Example: 44 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91542333
+	Correctly classified examples: 41
+	Current accuracy: 0.9318181818181818
+
+Example: 45 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9961852
+	Correctly classified examples: 42
+	Current accuracy: 0.9333333333333333
+
+Example: 46 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99794465
+	Correctly classified examples: 43
+	Current accuracy: 0.9347826086956522
+
+Example: 47 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93901193
+	Correctly classified examples: 44
+	Current accuracy: 0.9361702127659575
+
+Example: 48 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_low_wear Similarity: 0.917731
+	Correctly classified examples: 44
+	Current accuracy: 0.9166666666666666
+
+Example: 49 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.43387306
+	Correctly classified examples: 44
+	Current accuracy: 0.8979591836734694
+
+Example: 50 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95935065
+	Correctly classified examples: 45
+	Current accuracy: 0.9
+
+Example: 51 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9343505
+	Correctly classified examples: 46
+	Current accuracy: 0.9019607843137255
+
+Example: 52 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97631365
+	Correctly classified examples: 47
+	Current accuracy: 0.9038461538461539
+
+Example: 53 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99579245
+	Correctly classified examples: 48
+	Current accuracy: 0.9056603773584906
+
+Example: 54 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9568177
+	Correctly classified examples: 49
+	Current accuracy: 0.9074074074074074
+
+Example: 55 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7522512
+	Correctly classified examples: 50
+	Current accuracy: 0.9090909090909091
+
+Example: 56 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.90436625
+	Correctly classified examples: 51
+	Current accuracy: 0.9107142857142857
+
+Example: 57 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.84424585
+	Correctly classified examples: 52
+	Current accuracy: 0.9122807017543859
+
+Example: 58 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9611638
+	Correctly classified examples: 53
+	Current accuracy: 0.9137931034482759
+
+Example: 59 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9858814
+	Correctly classified examples: 54
+	Current accuracy: 0.9152542372881356
+
+Example: 60 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9125567
+	Correctly classified examples: 55
+	Current accuracy: 0.9166666666666666
+
+Example: 61 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98265445
+	Correctly classified examples: 56
+	Current accuracy: 0.9180327868852459
+
+Example: 62 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.79332674
+	Correctly classified examples: 57
+	Current accuracy: 0.9193548387096774
+
+Example: 63 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9700607
+	Correctly classified examples: 58
+	Current accuracy: 0.9206349206349206
+
+Example: 64 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9865325
+	Correctly classified examples: 59
+	Current accuracy: 0.921875
+
+Example: 65 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9831973
+	Correctly classified examples: 60
+	Current accuracy: 0.9230769230769231
+
+Example: 66 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94474316
+	Correctly classified examples: 61
+	Current accuracy: 0.9242424242424242
+
+Example: 67 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8194122
+	Correctly classified examples: 62
+	Current accuracy: 0.9253731343283582
+
+Example: 68 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8557411
+	Correctly classified examples: 63
+	Current accuracy: 0.9264705882352942
+
+Example: 69 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.68833584
+	Correctly classified examples: 64
+	Current accuracy: 0.927536231884058
+
+Example: 70 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.9872924
+	Correctly classified examples: 64
+	Current accuracy: 0.9142857142857143
+
+Example: 71 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9985102
+	Correctly classified examples: 65
+	Current accuracy: 0.9154929577464789
+
+Example: 72 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99101615
+	Correctly classified examples: 66
+	Current accuracy: 0.9166666666666666
+
+Example: 73 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.965713
+	Correctly classified examples: 67
+	Current accuracy: 0.9178082191780822
+
+Example: 74 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9879305
+	Correctly classified examples: 68
+	Current accuracy: 0.918918918918919
+
+Example: 75 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8024573
+	Correctly classified examples: 69
+	Current accuracy: 0.92
+
+Example: 76 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9912058
+	Correctly classified examples: 70
+	Current accuracy: 0.9210526315789473
+
+Example: 77 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.09475905
+	Correctly classified examples: 70
+	Current accuracy: 0.9090909090909091
+
+Example: 78 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9769139
+	Correctly classified examples: 71
+	Current accuracy: 0.9102564102564102
+
+Example: 79 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97097033
+	Correctly classified examples: 72
+	Current accuracy: 0.9113924050632911
+
+Example: 80 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98653835
+	Correctly classified examples: 73
+	Current accuracy: 0.9125
+
+Example: 81 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98553354
+	Correctly classified examples: 74
+	Current accuracy: 0.9135802469135802
+
+Example: 82 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9194833
+	Correctly classified examples: 75
+	Current accuracy: 0.9146341463414634
+
+Example: 83 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95315444
+	Correctly classified examples: 76
+	Current accuracy: 0.9156626506024096
+
+Example: 84 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9180455
+	Correctly classified examples: 77
+	Current accuracy: 0.9166666666666666
+
+Example: 85 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9950746
+	Correctly classified examples: 78
+	Current accuracy: 0.9176470588235294
+
+Example: 86 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95948315
+	Correctly classified examples: 79
+	Current accuracy: 0.9186046511627907
+
+Example: 87 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9760605
+	Correctly classified examples: 80
+	Current accuracy: 0.9195402298850575
+
+Example: 88 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93546706
+	Correctly classified examples: 81
+	Current accuracy: 0.9204545454545454
+
+Example: 89 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98302424
+	Correctly classified examples: 82
+	Current accuracy: 0.9213483146067416
+
+Example: 90 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.08194914
+	Correctly classified examples: 83
+	Current accuracy: 0.9222222222222223
+
+Example: 91 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98344475
+	Correctly classified examples: 84
+	Current accuracy: 0.9230769230769231
+
+Example: 92 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98100626
+	Correctly classified examples: 85
+	Current accuracy: 0.9239130434782609
+
+Example: 93 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9498117
+	Correctly classified examples: 86
+	Current accuracy: 0.9247311827956989
+
+Example: 94 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95069575
+	Correctly classified examples: 87
+	Current accuracy: 0.925531914893617
+
+Example: 95 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97070307
+	Correctly classified examples: 88
+	Current accuracy: 0.9263157894736842
+
+Example: 96 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98645693
+	Correctly classified examples: 89
+	Current accuracy: 0.9270833333333334
+
+Example: 97 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.00035167584
+	Correctly classified examples: 90
+	Current accuracy: 0.9278350515463918
+
+Example: 98 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96064943
+	Correctly classified examples: 91
+	Current accuracy: 0.9285714285714286
+
+Example: 99 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9954252
+	Correctly classified examples: 92
+	Current accuracy: 0.9292929292929293
+
+Example: 100 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.9921827
+	Correctly classified examples: 92
+	Current accuracy: 0.92
+
+Example: 101 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9918299
+	Correctly classified examples: 93
+	Current accuracy: 0.9207920792079208
+
+Example: 102 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9928941
+	Correctly classified examples: 94
+	Current accuracy: 0.9215686274509803
+
+Example: 103 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98278105
+	Correctly classified examples: 95
+	Current accuracy: 0.9223300970873787
+
+Example: 104 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9724691
+	Correctly classified examples: 96
+	Current accuracy: 0.9230769230769231
+
+Example: 105 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9794031
+	Correctly classified examples: 97
+	Current accuracy: 0.9238095238095239
+
+Example: 106 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6125066
+	Correctly classified examples: 98
+	Current accuracy: 0.9245283018867925
+
+Example: 107 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99253714
+	Correctly classified examples: 99
+	Current accuracy: 0.9252336448598131
+
+Example: 108 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9550285
+	Correctly classified examples: 100
+	Current accuracy: 0.9259259259259259
+
+Example: 109 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9375242
+	Correctly classified examples: 101
+	Current accuracy: 0.926605504587156
+
+Example: 110 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7295184
+	Correctly classified examples: 102
+	Current accuracy: 0.9272727272727272
+
+Example: 111 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9946225
+	Correctly classified examples: 103
+	Current accuracy: 0.9279279279279279
+
+Example: 112 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98891336
+	Correctly classified examples: 104
+	Current accuracy: 0.9285714285714286
+
+Example: 113 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99280524
+	Correctly classified examples: 105
+	Current accuracy: 0.9292035398230089
+
+Example: 114 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9952624
+	Correctly classified examples: 106
+	Current accuracy: 0.9298245614035088
+
+Example: 115 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.87988234
+	Correctly classified examples: 107
+	Current accuracy: 0.9304347826086956
+
+Example: 116 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9943516
+	Correctly classified examples: 108
+	Current accuracy: 0.9310344827586207
+
+Example: 117 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948166
+	Correctly classified examples: 109
+	Current accuracy: 0.9316239316239316
+
+Example: 118 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.5977
+	Correctly classified examples: 110
+	Current accuracy: 0.9322033898305084
+
+Example: 119 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9851164
+	Correctly classified examples: 111
+	Current accuracy: 0.9327731092436975
+
+Example: 120 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9780763
+	Correctly classified examples: 112
+	Current accuracy: 0.9333333333333333
+
+Example: 121 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7886225
+	Correctly classified examples: 113
+	Current accuracy: 0.9338842975206612
+
+Example: 122 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98745716
+	Correctly classified examples: 114
+	Current accuracy: 0.9344262295081968
+
+Example: 123 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.9414359
+	Correctly classified examples: 115
+	Current accuracy: 0.9349593495934959
+
+Example: 124 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99120647
+	Correctly classified examples: 116
+	Current accuracy: 0.9354838709677419
+
+Example: 125 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.919956
+	Correctly classified examples: 117
+	Current accuracy: 0.936
+
+Example: 126 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9960782
+	Correctly classified examples: 118
+	Current accuracy: 0.9365079365079365
+
+Example: 127 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99425685
+	Correctly classified examples: 119
+	Current accuracy: 0.937007874015748
+
+Example: 128 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9888231
+	Correctly classified examples: 120
+	Current accuracy: 0.9375
+
+Example: 129 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9703127
+	Correctly classified examples: 121
+	Current accuracy: 0.937984496124031
+
+Example: 130 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9410261
+	Correctly classified examples: 122
+	Current accuracy: 0.9384615384615385
+
+Example: 131 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9440933
+	Correctly classified examples: 123
+	Current accuracy: 0.9389312977099237
+
+Example: 132 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8120671
+	Correctly classified examples: 124
+	Current accuracy: 0.9393939393939394
+
+Example: 133 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.82818186
+	Correctly classified examples: 125
+	Current accuracy: 0.9398496240601504
+
+Example: 134 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7731853
+	Correctly classified examples: 126
+	Current accuracy: 0.9402985074626866
+
+Example: 135 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9609848
+	Correctly classified examples: 127
+	Current accuracy: 0.9407407407407408
+
+Example: 136 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9527813
+	Correctly classified examples: 128
+	Current accuracy: 0.9411764705882353
+
+Example: 137 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95449704
+	Correctly classified examples: 129
+	Current accuracy: 0.9416058394160584
+
+Example: 138 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99552643
+	Correctly classified examples: 130
+	Current accuracy: 0.9420289855072463
+
+Example: 139 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9876048
+	Correctly classified examples: 131
+	Current accuracy: 0.9424460431654677
+
+Example: 140 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9931165
+	Correctly classified examples: 132
+	Current accuracy: 0.9428571428571428
+
+Example: 141 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.81292576
+	Correctly classified examples: 133
+	Current accuracy: 0.9432624113475178
+
+Example: 142 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.82115614
+	Correctly classified examples: 134
+	Current accuracy: 0.9436619718309859
+
+Example: 143 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9777902
+	Correctly classified examples: 135
+	Current accuracy: 0.9440559440559441
+
+Example: 144 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.81663007
+	Correctly classified examples: 136
+	Current accuracy: 0.9444444444444444
+
+Example: 145 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.81718004
+	Correctly classified examples: 137
+	Current accuracy: 0.9448275862068966
+
+Example: 146 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9189105
+	Correctly classified examples: 138
+	Current accuracy: 0.9452054794520548
+
+Example: 147 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96174383
+	Correctly classified examples: 139
+	Current accuracy: 0.9455782312925171
+
+Example: 148 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8369177
+	Correctly classified examples: 140
+	Current accuracy: 0.9459459459459459
+
+Example: 149 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94363767
+	Correctly classified examples: 141
+	Current accuracy: 0.9463087248322147
+
+Example: 150 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9746843
+	Correctly classified examples: 142
+	Current accuracy: 0.9466666666666667
+
+Example: 151 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.74316454
+	Correctly classified examples: 143
+	Current accuracy: 0.9470198675496688
+
+Example: 152 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9874547
+	Correctly classified examples: 144
+	Current accuracy: 0.9473684210526315
+
+Example: 153 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9984471
+	Correctly classified examples: 145
+	Current accuracy: 0.9477124183006536
+
+Example: 154 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99518824
+	Correctly classified examples: 146
+	Current accuracy: 0.948051948051948
+
+Example: 155 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91252345
+	Correctly classified examples: 147
+	Current accuracy: 0.9483870967741935
+
+Example: 156 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9940826
+	Correctly classified examples: 148
+	Current accuracy: 0.9487179487179487
+
+Example: 157 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.90898496
+	Correctly classified examples: 149
+	Current accuracy: 0.9490445859872612
+
+Example: 158 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9113204
+	Correctly classified examples: 150
+	Current accuracy: 0.9493670886075949
+
+Example: 159 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9869199
+	Correctly classified examples: 151
+	Current accuracy: 0.949685534591195
+
+Example: 160 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9549891
+	Correctly classified examples: 152
+	Current accuracy: 0.95
+
+Example: 161 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9601578
+	Correctly classified examples: 153
+	Current accuracy: 0.9503105590062112
+
+Example: 162 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.85701686
+	Correctly classified examples: 154
+	Current accuracy: 0.9506172839506173
+
+Example: 163 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99471235
+	Correctly classified examples: 155
+	Current accuracy: 0.950920245398773
+
+Example: 164 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96679336
+	Correctly classified examples: 156
+	Current accuracy: 0.9512195121951219
+
+Example: 165 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9815979
+	Correctly classified examples: 157
+	Current accuracy: 0.9515151515151515
+
+Example: 166 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98922753
+	Correctly classified examples: 158
+	Current accuracy: 0.9518072289156626
+
+Example: 167 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.621826
+	Correctly classified examples: 159
+	Current accuracy: 0.9520958083832335
+
+Example: 168 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8605491
+	Correctly classified examples: 160
+	Current accuracy: 0.9523809523809523
+
+Example: 169 / 914
+	Classified as: txt_17_comp_leak Correct class: txt16_m3_t1_high_wear Similarity: 7.5905454e-33
+	Correctly classified examples: 160
+	Current accuracy: 0.9467455621301775
+
+Example: 170 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8123631
+	Correctly classified examples: 161
+	Current accuracy: 0.9470588235294117
+
+Example: 171 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9643463
+	Correctly classified examples: 162
+	Current accuracy: 0.9473684210526315
+
+Example: 172 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.86698174
+	Correctly classified examples: 163
+	Current accuracy: 0.9476744186046512
+
+Example: 173 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9944632
+	Correctly classified examples: 164
+	Current accuracy: 0.9479768786127167
+
+Example: 174 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9969192
+	Correctly classified examples: 165
+	Current accuracy: 0.9482758620689655
+
+Example: 175 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.823285
+	Correctly classified examples: 166
+	Current accuracy: 0.9485714285714286
+
+Example: 176 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98319095
+	Correctly classified examples: 167
+	Current accuracy: 0.9488636363636364
+
+Example: 177 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98448116
+	Correctly classified examples: 168
+	Current accuracy: 0.9491525423728814
+
+Example: 178 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97987604
+	Correctly classified examples: 169
+	Current accuracy: 0.949438202247191
+
+Example: 179 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95126593
+	Correctly classified examples: 170
+	Current accuracy: 0.9497206703910615
+
+Example: 180 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.994827
+	Correctly classified examples: 171
+	Current accuracy: 0.95
+
+Example: 181 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9905599
+	Correctly classified examples: 172
+	Current accuracy: 0.9502762430939227
+
+Example: 182 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9824333
+	Correctly classified examples: 173
+	Current accuracy: 0.9505494505494505
+
+Example: 183 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9853556
+	Correctly classified examples: 174
+	Current accuracy: 0.9508196721311475
+
+Example: 184 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9934639
+	Correctly classified examples: 175
+	Current accuracy: 0.9510869565217391
+
+Example: 185 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9768246
+	Correctly classified examples: 176
+	Current accuracy: 0.9513513513513514
+
+Example: 186 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99349797
+	Correctly classified examples: 177
+	Current accuracy: 0.9516129032258065
+
+Example: 187 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9777505
+	Correctly classified examples: 178
+	Current accuracy: 0.9518716577540107
+
+Example: 188 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95377374
+	Correctly classified examples: 179
+	Current accuracy: 0.9521276595744681
+
+Example: 189 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97162104
+	Correctly classified examples: 180
+	Current accuracy: 0.9523809523809523
+
+Example: 190 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.122316666
+	Correctly classified examples: 181
+	Current accuracy: 0.9526315789473684
+
+Example: 191 / 914
+	Classified as: no_failure Correct class: txt15_m1_t1_high_wear Similarity: 0.030414848
+	Correctly classified examples: 181
+	Current accuracy: 0.9476439790575916
+
+Example: 192 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9959003
+	Correctly classified examples: 182
+	Current accuracy: 0.9479166666666666
+
+Example: 193 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9937101
+	Correctly classified examples: 183
+	Current accuracy: 0.9481865284974094
+
+Example: 194 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9067054
+	Correctly classified examples: 184
+	Current accuracy: 0.9484536082474226
+
+Example: 195 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9940534
+	Correctly classified examples: 185
+	Current accuracy: 0.9487179487179487
+
+Example: 196 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98644686
+	Correctly classified examples: 186
+	Current accuracy: 0.9489795918367347
+
+Example: 197 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99668163
+	Correctly classified examples: 187
+	Current accuracy: 0.949238578680203
+
+Example: 198 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.87695724
+	Correctly classified examples: 188
+	Current accuracy: 0.9494949494949495
+
+Example: 199 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98751456
+	Correctly classified examples: 189
+	Current accuracy: 0.949748743718593
+
+Example: 200 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9628956
+	Correctly classified examples: 190
+	Current accuracy: 0.95
+
+Example: 201 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9932943
+	Correctly classified examples: 191
+	Current accuracy: 0.9502487562189055
+
+Example: 202 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8411013
+	Correctly classified examples: 192
+	Current accuracy: 0.9504950495049505
+
+Example: 203 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8506307
+	Correctly classified examples: 193
+	Current accuracy: 0.9507389162561576
+
+Example: 204 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95507663
+	Correctly classified examples: 194
+	Current accuracy: 0.9509803921568627
+
+Example: 205 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9892128
+	Correctly classified examples: 195
+	Current accuracy: 0.9512195121951219
+
+Example: 206 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.990293
+	Correctly classified examples: 196
+	Current accuracy: 0.9514563106796117
+
+Example: 207 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9441039
+	Correctly classified examples: 197
+	Current accuracy: 0.9516908212560387
+
+Example: 208 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9958438
+	Correctly classified examples: 198
+	Current accuracy: 0.9519230769230769
+
+Example: 209 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99502313
+	Correctly classified examples: 199
+	Current accuracy: 0.9521531100478469
+
+Example: 210 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97137815
+	Correctly classified examples: 200
+	Current accuracy: 0.9523809523809523
+
+Example: 211 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98634005
+	Correctly classified examples: 201
+	Current accuracy: 0.95260663507109
+
+Example: 212 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93028027
+	Correctly classified examples: 202
+	Current accuracy: 0.9528301886792453
+
+Example: 213 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98937446
+	Correctly classified examples: 203
+	Current accuracy: 0.9530516431924883
+
+Example: 214 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9969554
+	Correctly classified examples: 204
+	Current accuracy: 0.9532710280373832
+
+Example: 215 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9408735
+	Correctly classified examples: 205
+	Current accuracy: 0.9534883720930233
+
+Example: 216 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9551081
+	Correctly classified examples: 206
+	Current accuracy: 0.9537037037037037
+
+Example: 217 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.953829
+	Correctly classified examples: 207
+	Current accuracy: 0.9539170506912442
+
+Example: 218 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99425286
+	Correctly classified examples: 208
+	Current accuracy: 0.9541284403669725
+
+Example: 219 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9507406
+	Correctly classified examples: 209
+	Current accuracy: 0.954337899543379
+
+Example: 220 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99250185
+	Correctly classified examples: 210
+	Current accuracy: 0.9545454545454546
+
+Example: 221 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96084607
+	Correctly classified examples: 211
+	Current accuracy: 0.9547511312217195
+
+Example: 222 / 914
+	Classified as: txt_17_comp_leak Correct class: no_failure Similarity: 5.392339e-06
+	Correctly classified examples: 211
+	Current accuracy: 0.9504504504504504
+
+Example: 223 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9952899
+	Correctly classified examples: 212
+	Current accuracy: 0.9506726457399103
+
+Example: 224 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99736303
+	Correctly classified examples: 213
+	Current accuracy: 0.9508928571428571
+
+Example: 225 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9758861
+	Correctly classified examples: 214
+	Current accuracy: 0.9511111111111111
+
+Example: 226 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9824071
+	Correctly classified examples: 215
+	Current accuracy: 0.9513274336283186
+
+Example: 227 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9149267
+	Correctly classified examples: 216
+	Current accuracy: 0.9515418502202643
+
+Example: 228 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99606526
+	Correctly classified examples: 217
+	Current accuracy: 0.9517543859649122
+
+Example: 229 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9849445
+	Correctly classified examples: 218
+	Current accuracy: 0.9519650655021834
+
+Example: 230 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9765669
+	Correctly classified examples: 219
+	Current accuracy: 0.9521739130434783
+
+Example: 231 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.85885274
+	Correctly classified examples: 220
+	Current accuracy: 0.9523809523809523
+
+Example: 232 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8216061
+	Correctly classified examples: 221
+	Current accuracy: 0.9525862068965517
+
+Example: 233 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.88360757
+	Correctly classified examples: 222
+	Current accuracy: 0.9527896995708155
+
+Example: 234 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8942355
+	Correctly classified examples: 223
+	Current accuracy: 0.9529914529914529
+
+Example: 235 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99841416
+	Correctly classified examples: 224
+	Current accuracy: 0.9531914893617022
+
+Example: 236 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99349624
+	Correctly classified examples: 225
+	Current accuracy: 0.9533898305084746
+
+Example: 237 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96713644
+	Correctly classified examples: 226
+	Current accuracy: 0.9535864978902954
+
+Example: 238 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9175306
+	Correctly classified examples: 227
+	Current accuracy: 0.9537815126050421
+
+Example: 239 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6653358
+	Correctly classified examples: 228
+	Current accuracy: 0.9539748953974896
+
+Example: 240 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9931841
+	Correctly classified examples: 229
+	Current accuracy: 0.9541666666666667
+
+Example: 241 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9953243
+	Correctly classified examples: 230
+	Current accuracy: 0.9543568464730291
+
+Example: 242 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9905059
+	Correctly classified examples: 231
+	Current accuracy: 0.9545454545454546
+
+Example: 243 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9434522
+	Correctly classified examples: 232
+	Current accuracy: 0.9547325102880658
+
+Example: 244 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9782894
+	Correctly classified examples: 233
+	Current accuracy: 0.9549180327868853
+
+Example: 245 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9299922
+	Correctly classified examples: 234
+	Current accuracy: 0.9551020408163265
+
+Example: 246 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96528965
+	Correctly classified examples: 235
+	Current accuracy: 0.9552845528455285
+
+Example: 247 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.28583077
+	Correctly classified examples: 236
+	Current accuracy: 0.9554655870445344
+
+Example: 248 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9908082
+	Correctly classified examples: 237
+	Current accuracy: 0.9556451612903226
+
+Example: 249 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.992444
+	Correctly classified examples: 238
+	Current accuracy: 0.9558232931726908
+
+Example: 250 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99522793
+	Correctly classified examples: 239
+	Current accuracy: 0.956
+
+Example: 251 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9735743
+	Correctly classified examples: 240
+	Current accuracy: 0.9561752988047809
+
+Example: 252 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9648953
+	Correctly classified examples: 241
+	Current accuracy: 0.9563492063492064
+
+Example: 253 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.98071575
+	Correctly classified examples: 241
+	Current accuracy: 0.9525691699604744
+
+Example: 254 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97864705
+	Correctly classified examples: 242
+	Current accuracy: 0.952755905511811
+
+Example: 255 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9892227
+	Correctly classified examples: 243
+	Current accuracy: 0.9529411764705882
+
+Example: 256 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96109504
+	Correctly classified examples: 244
+	Current accuracy: 0.953125
+
+Example: 257 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9934167
+	Correctly classified examples: 245
+	Current accuracy: 0.953307392996109
+
+Example: 258 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99280256
+	Correctly classified examples: 246
+	Current accuracy: 0.9534883720930233
+
+Example: 259 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99355304
+	Correctly classified examples: 247
+	Current accuracy: 0.9536679536679536
+
+Example: 260 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99877954
+	Correctly classified examples: 248
+	Current accuracy: 0.9538461538461539
+
+Example: 261 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9975995
+	Correctly classified examples: 249
+	Current accuracy: 0.9540229885057471
+
+Example: 262 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7328404
+	Correctly classified examples: 250
+	Current accuracy: 0.9541984732824428
+
+Example: 263 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 6.159599e-05
+	Correctly classified examples: 251
+	Current accuracy: 0.9543726235741445
+
+Example: 264 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97569746
+	Correctly classified examples: 252
+	Current accuracy: 0.9545454545454546
+
+Example: 265 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.2118004
+	Correctly classified examples: 253
+	Current accuracy: 0.9547169811320755
+
+Example: 266 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96220773
+	Correctly classified examples: 254
+	Current accuracy: 0.9548872180451128
+
+Example: 267 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8154241
+	Correctly classified examples: 255
+	Current accuracy: 0.9550561797752809
+
+Example: 268 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94816095
+	Correctly classified examples: 256
+	Current accuracy: 0.9552238805970149
+
+Example: 269 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99332386
+	Correctly classified examples: 257
+	Current accuracy: 0.9553903345724907
+
+Example: 270 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8960102
+	Correctly classified examples: 258
+	Current accuracy: 0.9555555555555556
+
+Example: 271 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948373
+	Correctly classified examples: 259
+	Current accuracy: 0.955719557195572
+
+Example: 272 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.965587
+	Correctly classified examples: 260
+	Current accuracy: 0.9558823529411765
+
+Example: 273 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.79595435
+	Correctly classified examples: 261
+	Current accuracy: 0.9560439560439561
+
+Example: 274 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8106751
+	Correctly classified examples: 262
+	Current accuracy: 0.9562043795620438
+
+Example: 275 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98080647
+	Correctly classified examples: 263
+	Current accuracy: 0.9563636363636364
+
+Example: 276 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9898271
+	Correctly classified examples: 264
+	Current accuracy: 0.9565217391304348
+
+Example: 277 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97815436
+	Correctly classified examples: 265
+	Current accuracy: 0.9566787003610109
+
+Example: 278 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9944637
+	Correctly classified examples: 266
+	Current accuracy: 0.9568345323741008
+
+Example: 279 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9899678
+	Correctly classified examples: 267
+	Current accuracy: 0.956989247311828
+
+Example: 280 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99118334
+	Correctly classified examples: 268
+	Current accuracy: 0.9571428571428572
+
+Example: 281 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94933015
+	Correctly classified examples: 269
+	Current accuracy: 0.9572953736654805
+
+Example: 282 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.993572
+	Correctly classified examples: 270
+	Current accuracy: 0.9574468085106383
+
+Example: 283 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948845
+	Correctly classified examples: 271
+	Current accuracy: 0.9575971731448764
+
+Example: 284 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98478335
+	Correctly classified examples: 272
+	Current accuracy: 0.9577464788732394
+
+Example: 285 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93081445
+	Correctly classified examples: 273
+	Current accuracy: 0.9578947368421052
+
+Example: 286 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_17_comp_leak Similarity: 0.046100356
+	Correctly classified examples: 273
+	Current accuracy: 0.9545454545454546
+
+Example: 287 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9687384
+	Correctly classified examples: 274
+	Current accuracy: 0.9547038327526133
+
+Example: 288 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9902359
+	Correctly classified examples: 275
+	Current accuracy: 0.9548611111111112
+
+Example: 289 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93739325
+	Correctly classified examples: 276
+	Current accuracy: 0.9550173010380623
+
+Example: 290 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99725646
+	Correctly classified examples: 277
+	Current accuracy: 0.9551724137931035
+
+Example: 291 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96412194
+	Correctly classified examples: 278
+	Current accuracy: 0.9553264604810997
+
+Example: 292 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9032851
+	Correctly classified examples: 279
+	Current accuracy: 0.9554794520547946
+
+Example: 293 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9106679
+	Correctly classified examples: 280
+	Current accuracy: 0.9556313993174061
+
+Example: 294 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97886914
+	Correctly classified examples: 281
+	Current accuracy: 0.95578231292517
+
+Example: 295 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91313547
+	Correctly classified examples: 282
+	Current accuracy: 0.9559322033898305
+
+Example: 296 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.952374
+	Correctly classified examples: 283
+	Current accuracy: 0.956081081081081
+
+Example: 297 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91340554
+	Correctly classified examples: 284
+	Current accuracy: 0.9562289562289562
+
+Example: 298 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6257017
+	Correctly classified examples: 285
+	Current accuracy: 0.9563758389261745
+
+Example: 299 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95825183
+	Correctly classified examples: 286
+	Current accuracy: 0.9565217391304348
+
+Example: 300 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 9.815671e-06
+	Correctly classified examples: 287
+	Current accuracy: 0.9566666666666667
+
+Example: 301 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9949736
+	Correctly classified examples: 288
+	Current accuracy: 0.9568106312292359
+
+Example: 302 / 914
+	Classified as: txt16_i4 Correct class: txt16_i4 Similarity: 0.0019918312
+	Correctly classified examples: 289
+	Current accuracy: 0.956953642384106
+
+Example: 303 / 914
+	Classified as: txt16_i4 Correct class: txt16_i4 Similarity: 3.1297193e-06
+	Correctly classified examples: 290
+	Current accuracy: 0.9570957095709571
+
+Example: 304 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95615685
+	Correctly classified examples: 291
+	Current accuracy: 0.9572368421052632
+
+Example: 305 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9951762
+	Correctly classified examples: 292
+	Current accuracy: 0.9573770491803278
+
+Example: 306 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.8050375
+	Correctly classified examples: 293
+	Current accuracy: 0.9575163398692811
+
+Example: 307 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99727345
+	Correctly classified examples: 294
+	Current accuracy: 0.9576547231270358
+
+Example: 308 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948882
+	Correctly classified examples: 295
+	Current accuracy: 0.9577922077922078
+
+Example: 309 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9885833
+	Correctly classified examples: 296
+	Current accuracy: 0.9579288025889967
+
+Example: 310 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9638132
+	Correctly classified examples: 297
+	Current accuracy: 0.9580645161290322
+
+Example: 311 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9949608
+	Correctly classified examples: 298
+	Current accuracy: 0.9581993569131833
+
+Example: 312 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98561096
+	Correctly classified examples: 299
+	Current accuracy: 0.9583333333333334
+
+Example: 313 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9907145
+	Correctly classified examples: 300
+	Current accuracy: 0.9584664536741214
+
+Example: 314 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9897882
+	Correctly classified examples: 301
+	Current accuracy: 0.9585987261146497
+
+Example: 315 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96756333
+	Correctly classified examples: 302
+	Current accuracy: 0.9587301587301588
+
+Example: 316 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9902362
+	Correctly classified examples: 303
+	Current accuracy: 0.9588607594936709
+
+Example: 317 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.34761047
+	Correctly classified examples: 304
+	Current accuracy: 0.9589905362776026
+
+Example: 318 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.997472
+	Correctly classified examples: 305
+	Current accuracy: 0.9591194968553459
+
+Example: 319 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99817336
+	Correctly classified examples: 306
+	Current accuracy: 0.9592476489028213
+
+Example: 320 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.33662865
+	Correctly classified examples: 307
+	Current accuracy: 0.959375
+
+Example: 321 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96168226
+	Correctly classified examples: 308
+	Current accuracy: 0.9595015576323987
+
+Example: 322 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.92957777
+	Correctly classified examples: 309
+	Current accuracy: 0.9596273291925466
+
+Example: 323 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98862696
+	Correctly classified examples: 310
+	Current accuracy: 0.9597523219814241
+
+Example: 324 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.961262
+	Correctly classified examples: 311
+	Current accuracy: 0.9598765432098766
+
+Example: 325 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99459213
+	Correctly classified examples: 312
+	Current accuracy: 0.96
+
+Example: 326 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99405545
+	Correctly classified examples: 313
+	Current accuracy: 0.9601226993865031
+
+Example: 327 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.85325146
+	Correctly classified examples: 314
+	Current accuracy: 0.9602446483180428
+
+Example: 328 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8091608
+	Correctly classified examples: 315
+	Current accuracy: 0.9603658536585366
+
+Example: 329 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 0.31124154
+	Correctly classified examples: 315
+	Current accuracy: 0.9574468085106383
+
+Example: 330 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94475317
+	Correctly classified examples: 316
+	Current accuracy: 0.9575757575757575
+
+Example: 331 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8931569
+	Correctly classified examples: 317
+	Current accuracy: 0.9577039274924471
+
+Example: 332 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98586553
+	Correctly classified examples: 318
+	Current accuracy: 0.9578313253012049
+
+Example: 333 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96927935
+	Correctly classified examples: 319
+	Current accuracy: 0.9579579579579579
+
+Example: 334 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9483788
+	Correctly classified examples: 320
+	Current accuracy: 0.9580838323353293
+
+Example: 335 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99398226
+	Correctly classified examples: 321
+	Current accuracy: 0.9582089552238806
+
+Example: 336 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9504684
+	Correctly classified examples: 322
+	Current accuracy: 0.9583333333333334
+
+Example: 337 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91419476
+	Correctly classified examples: 323
+	Current accuracy: 0.9584569732937686
+
+Example: 338 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91661257
+	Correctly classified examples: 324
+	Current accuracy: 0.9585798816568047
+
+Example: 339 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9827706
+	Correctly classified examples: 325
+	Current accuracy: 0.9587020648967551
+
+Example: 340 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99266195
+	Correctly classified examples: 326
+	Current accuracy: 0.9588235294117647
+
+Example: 341 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.80722666
+	Correctly classified examples: 327
+	Current accuracy: 0.9589442815249267
+
+Example: 342 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6803747
+	Correctly classified examples: 328
+	Current accuracy: 0.9590643274853801
+
+Example: 343 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.66925436
+	Correctly classified examples: 328
+	Current accuracy: 0.956268221574344
+
+Example: 344 / 914
+	Classified as: txt_17_comp_leak Correct class: txt15_m1_t1_high_wear Similarity: 2.032468e-16
+	Correctly classified examples: 328
+	Current accuracy: 0.9534883720930233
+
+Example: 345 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98769903
+	Correctly classified examples: 329
+	Current accuracy: 0.9536231884057971
+
+Example: 346 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97913957
+	Correctly classified examples: 330
+	Current accuracy: 0.953757225433526
+
+Example: 347 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99068666
+	Correctly classified examples: 331
+	Current accuracy: 0.9538904899135446
+
+Example: 348 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.025348203
+	Correctly classified examples: 332
+	Current accuracy: 0.9540229885057471
+
+Example: 349 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8527655
+	Correctly classified examples: 333
+	Current accuracy: 0.9541547277936963
+
+Example: 350 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9925306
+	Correctly classified examples: 334
+	Current accuracy: 0.9542857142857143
+
+Example: 351 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9796656
+	Correctly classified examples: 335
+	Current accuracy: 0.9544159544159544
+
+Example: 352 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97789127
+	Correctly classified examples: 336
+	Current accuracy: 0.9545454545454546
+
+Example: 353 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9918564
+	Correctly classified examples: 337
+	Current accuracy: 0.9546742209631728
+
+Example: 354 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.027811566
+	Correctly classified examples: 338
+	Current accuracy: 0.9548022598870056
+
+Example: 355 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.0025631192
+	Correctly classified examples: 338
+	Current accuracy: 0.952112676056338
+
+Example: 356 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9266147
+	Correctly classified examples: 339
+	Current accuracy: 0.952247191011236
+
+Example: 357 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7826341
+	Correctly classified examples: 340
+	Current accuracy: 0.9523809523809523
+
+Example: 358 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.6999671
+	Correctly classified examples: 341
+	Current accuracy: 0.952513966480447
+
+Example: 359 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98767805
+	Correctly classified examples: 342
+	Current accuracy: 0.9526462395543176
+
+Example: 360 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9985668
+	Correctly classified examples: 343
+	Current accuracy: 0.9527777777777777
+
+Example: 361 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9976882
+	Correctly classified examples: 344
+	Current accuracy: 0.9529085872576177
+
+Example: 362 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.926123
+	Correctly classified examples: 345
+	Current accuracy: 0.9530386740331491
+
+Example: 363 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99573207
+	Correctly classified examples: 346
+	Current accuracy: 0.953168044077135
+
+Example: 364 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99461347
+	Correctly classified examples: 347
+	Current accuracy: 0.9532967032967034
+
+Example: 365 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99486345
+	Correctly classified examples: 348
+	Current accuracy: 0.9534246575342465
+
+Example: 366 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9579733
+	Correctly classified examples: 349
+	Current accuracy: 0.953551912568306
+
+Example: 367 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99429244
+	Correctly classified examples: 350
+	Current accuracy: 0.9536784741144414
+
+Example: 368 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98618597
+	Correctly classified examples: 351
+	Current accuracy: 0.9538043478260869
+
+Example: 369 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9819306
+	Correctly classified examples: 352
+	Current accuracy: 0.9539295392953929
+
+Example: 370 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8806872
+	Correctly classified examples: 353
+	Current accuracy: 0.9540540540540541
+
+Example: 371 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98680335
+	Correctly classified examples: 354
+	Current accuracy: 0.954177897574124
+
+Example: 372 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9937622
+	Correctly classified examples: 355
+	Current accuracy: 0.9543010752688172
+
+Example: 373 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9875398
+	Correctly classified examples: 356
+	Current accuracy: 0.9544235924932976
+
+Example: 374 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9979728
+	Correctly classified examples: 357
+	Current accuracy: 0.9545454545454546
+
+Example: 375 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.23029873
+	Correctly classified examples: 358
+	Current accuracy: 0.9546666666666667
+
+Example: 376 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_18_comp_leak Similarity: 0.021668697
+	Correctly classified examples: 358
+	Current accuracy: 0.9521276595744681
+
+Example: 377 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7312437
+	Correctly classified examples: 359
+	Current accuracy: 0.9522546419098143
+
+Example: 378 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98663336
+	Correctly classified examples: 360
+	Current accuracy: 0.9523809523809523
+
+Example: 379 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8313312
+	Correctly classified examples: 361
+	Current accuracy: 0.9525065963060686
+
+Example: 380 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99387157
+	Correctly classified examples: 362
+	Current accuracy: 0.9526315789473684
+
+Example: 381 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.84395486
+	Correctly classified examples: 363
+	Current accuracy: 0.952755905511811
+
+Example: 382 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97530246
+	Correctly classified examples: 364
+	Current accuracy: 0.9528795811518325
+
+Example: 383 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9447562
+	Correctly classified examples: 365
+	Current accuracy: 0.9530026109660574
+
+Example: 384 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9955454
+	Correctly classified examples: 366
+	Current accuracy: 0.953125
+
+Example: 385 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9902594
+	Correctly classified examples: 367
+	Current accuracy: 0.9532467532467532
+
+Example: 386 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9934296
+	Correctly classified examples: 368
+	Current accuracy: 0.9533678756476683
+
+Example: 387 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9943699
+	Correctly classified examples: 369
+	Current accuracy: 0.9534883720930233
+
+Example: 388 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99684227
+	Correctly classified examples: 370
+	Current accuracy: 0.9536082474226805
+
+Example: 389 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9946949
+	Correctly classified examples: 371
+	Current accuracy: 0.9537275064267352
+
+Example: 390 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.88041925
+	Correctly classified examples: 372
+	Current accuracy: 0.9538461538461539
+
+Example: 391 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98193306
+	Correctly classified examples: 373
+	Current accuracy: 0.9539641943734015
+
+Example: 392 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9852949
+	Correctly classified examples: 374
+	Current accuracy: 0.9540816326530612
+
+Example: 393 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9583411
+	Correctly classified examples: 375
+	Current accuracy: 0.9541984732824428
+
+Example: 394 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.16476916
+	Correctly classified examples: 376
+	Current accuracy: 0.9543147208121827
+
+Example: 395 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9955823
+	Correctly classified examples: 377
+	Current accuracy: 0.9544303797468354
+
+Example: 396 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.85539675
+	Correctly classified examples: 378
+	Current accuracy: 0.9545454545454546
+
+Example: 397 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9881085
+	Correctly classified examples: 379
+	Current accuracy: 0.9546599496221663
+
+Example: 398 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.82388914
+	Correctly classified examples: 380
+	Current accuracy: 0.9547738693467337
+
+Example: 399 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.87356806
+	Correctly classified examples: 381
+	Current accuracy: 0.9548872180451128
+
+Example: 400 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9901649
+	Correctly classified examples: 382
+	Current accuracy: 0.955
+
+Example: 401 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9874133
+	Correctly classified examples: 383
+	Current accuracy: 0.9551122194513716
+
+Example: 402 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9827451
+	Correctly classified examples: 384
+	Current accuracy: 0.9552238805970149
+
+Example: 403 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9683544
+	Correctly classified examples: 385
+	Current accuracy: 0.9553349875930521
+
+Example: 404 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9769736
+	Correctly classified examples: 386
+	Current accuracy: 0.9554455445544554
+
+Example: 405 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9817554
+	Correctly classified examples: 387
+	Current accuracy: 0.9555555555555556
+
+Example: 406 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9595143
+	Correctly classified examples: 388
+	Current accuracy: 0.9556650246305419
+
+Example: 407 / 914
+	Classified as: no_failure Correct class: txt15_m1_t1_high_wear Similarity: 6.1772755e-07
+	Correctly classified examples: 388
+	Current accuracy: 0.9533169533169533
+
+Example: 408 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6343102
+	Correctly classified examples: 389
+	Current accuracy: 0.9534313725490197
+
+Example: 409 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91122156
+	Correctly classified examples: 390
+	Current accuracy: 0.9535452322738386
+
+Example: 410 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9667767
+	Correctly classified examples: 391
+	Current accuracy: 0.9536585365853658
+
+Example: 411 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94386494
+	Correctly classified examples: 392
+	Current accuracy: 0.9537712895377128
+
+Example: 412 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9831073
+	Correctly classified examples: 393
+	Current accuracy: 0.9538834951456311
+
+Example: 413 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_17_comp_leak Similarity: 1.7680551e-10
+	Correctly classified examples: 393
+	Current accuracy: 0.9515738498789347
+
+Example: 414 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9891536
+	Correctly classified examples: 394
+	Current accuracy: 0.9516908212560387
+
+Example: 415 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.65495604
+	Correctly classified examples: 395
+	Current accuracy: 0.9518072289156626
+
+Example: 416 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94647914
+	Correctly classified examples: 396
+	Current accuracy: 0.9519230769230769
+
+Example: 417 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.74186885
+	Correctly classified examples: 397
+	Current accuracy: 0.9520383693045563
+
+Example: 418 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.82199395
+	Correctly classified examples: 398
+	Current accuracy: 0.9521531100478469
+
+Example: 419 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8706796
+	Correctly classified examples: 399
+	Current accuracy: 0.9522673031026253
+
+Example: 420 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9763682
+	Correctly classified examples: 400
+	Current accuracy: 0.9523809523809523
+
+Example: 421 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 0.79902446
+	Correctly classified examples: 400
+	Current accuracy: 0.9501187648456056
+
+Example: 422 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9931046
+	Correctly classified examples: 401
+	Current accuracy: 0.9502369668246445
+
+Example: 423 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9353312
+	Correctly classified examples: 402
+	Current accuracy: 0.950354609929078
+
+Example: 424 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.81135654
+	Correctly classified examples: 403
+	Current accuracy: 0.9504716981132075
+
+Example: 425 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91645056
+	Correctly classified examples: 404
+	Current accuracy: 0.9505882352941176
+
+Example: 426 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.67284006
+	Correctly classified examples: 405
+	Current accuracy: 0.9507042253521126
+
+Example: 427 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9712118
+	Correctly classified examples: 406
+	Current accuracy: 0.9508196721311475
+
+Example: 428 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99397224
+	Correctly classified examples: 407
+	Current accuracy: 0.9509345794392523
+
+Example: 429 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9117716
+	Correctly classified examples: 408
+	Current accuracy: 0.951048951048951
+
+Example: 430 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9982301
+	Correctly classified examples: 409
+	Current accuracy: 0.9511627906976744
+
+Example: 431 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9928801
+	Correctly classified examples: 410
+	Current accuracy: 0.951276102088167
+
+Example: 432 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9971095
+	Correctly classified examples: 411
+	Current accuracy: 0.9513888888888888
+
+Example: 433 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9605098
+	Correctly classified examples: 412
+	Current accuracy: 0.9515011547344111
+
+Example: 434 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9260613
+	Correctly classified examples: 413
+	Current accuracy: 0.9516129032258065
+
+Example: 435 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9882966
+	Correctly classified examples: 414
+	Current accuracy: 0.9517241379310345
+
+Example: 436 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9698248
+	Correctly classified examples: 415
+	Current accuracy: 0.9518348623853211
+
+Example: 437 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.16520864
+	Correctly classified examples: 416
+	Current accuracy: 0.9519450800915332
+
+Example: 438 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.002818013
+	Correctly classified examples: 417
+	Current accuracy: 0.952054794520548
+
+Example: 439 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98616445
+	Correctly classified examples: 418
+	Current accuracy: 0.9521640091116174
+
+Example: 440 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.77413124
+	Correctly classified examples: 419
+	Current accuracy: 0.9522727272727273
+
+Example: 441 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9563598
+	Correctly classified examples: 420
+	Current accuracy: 0.9523809523809523
+
+Example: 442 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99486214
+	Correctly classified examples: 421
+	Current accuracy: 0.9524886877828054
+
+Example: 443 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99133456
+	Correctly classified examples: 422
+	Current accuracy: 0.9525959367945824
+
+Example: 444 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9862184
+	Correctly classified examples: 423
+	Current accuracy: 0.9527027027027027
+
+Example: 445 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99858344
+	Correctly classified examples: 424
+	Current accuracy: 0.952808988764045
+
+Example: 446 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7090623
+	Correctly classified examples: 425
+	Current accuracy: 0.952914798206278
+
+Example: 447 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9912998
+	Correctly classified examples: 426
+	Current accuracy: 0.9530201342281879
+
+Example: 448 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9097271
+	Correctly classified examples: 427
+	Current accuracy: 0.953125
+
+Example: 449 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8193958
+	Correctly classified examples: 428
+	Current accuracy: 0.9532293986636972
+
+Example: 450 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9147564
+	Correctly classified examples: 429
+	Current accuracy: 0.9533333333333334
+
+Example: 451 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.928135
+	Correctly classified examples: 430
+	Current accuracy: 0.9534368070953437
+
+Example: 452 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9924113
+	Correctly classified examples: 431
+	Current accuracy: 0.9535398230088495
+
+Example: 453 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6966719
+	Correctly classified examples: 432
+	Current accuracy: 0.9536423841059603
+
+Example: 454 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95291406
+	Correctly classified examples: 433
+	Current accuracy: 0.9537444933920705
+
+Example: 455 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.992895
+	Correctly classified examples: 434
+	Current accuracy: 0.9538461538461539
+
+Example: 456 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9621753
+	Correctly classified examples: 435
+	Current accuracy: 0.9539473684210527
+
+Example: 457 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.5495463
+	Correctly classified examples: 436
+	Current accuracy: 0.9540481400437637
+
+Example: 458 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91959137
+	Correctly classified examples: 437
+	Current accuracy: 0.9541484716157205
+
+Example: 459 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99170446
+	Correctly classified examples: 438
+	Current accuracy: 0.954248366013072
+
+Example: 460 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.83505726
+	Correctly classified examples: 439
+	Current accuracy: 0.9543478260869566
+
+Example: 461 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9797539
+	Correctly classified examples: 440
+	Current accuracy: 0.9544468546637744
+
+Example: 462 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9941747
+	Correctly classified examples: 441
+	Current accuracy: 0.9545454545454546
+
+Example: 463 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9595196
+	Correctly classified examples: 442
+	Current accuracy: 0.9546436285097192
+
+Example: 464 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9295705
+	Correctly classified examples: 443
+	Current accuracy: 0.9547413793103449
+
+Example: 465 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97602516
+	Correctly classified examples: 444
+	Current accuracy: 0.9548387096774194
+
+Example: 466 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 0.0037613232
+	Correctly classified examples: 444
+	Current accuracy: 0.9527896995708155
+
+Example: 467 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.990038
+	Correctly classified examples: 445
+	Current accuracy: 0.9528907922912205
+
+Example: 468 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99626684
+	Correctly classified examples: 446
+	Current accuracy: 0.9529914529914529
+
+Example: 469 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.90566707
+	Correctly classified examples: 446
+	Current accuracy: 0.9509594882729211
+
+Example: 470 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95768005
+	Correctly classified examples: 447
+	Current accuracy: 0.951063829787234
+
+Example: 471 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8332866
+	Correctly classified examples: 448
+	Current accuracy: 0.9511677282377919
+
+Example: 472 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97777766
+	Correctly classified examples: 449
+	Current accuracy: 0.951271186440678
+
+Example: 473 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.89632696
+	Correctly classified examples: 450
+	Current accuracy: 0.9513742071881607
+
+Example: 474 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9947676
+	Correctly classified examples: 451
+	Current accuracy: 0.9514767932489452
+
+Example: 475 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.86050457
+	Correctly classified examples: 452
+	Current accuracy: 0.9515789473684211
+
+Example: 476 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8662421
+	Correctly classified examples: 453
+	Current accuracy: 0.9516806722689075
+
+Example: 477 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99250484
+	Correctly classified examples: 454
+	Current accuracy: 0.9517819706498952
+
+Example: 478 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9315845
+	Correctly classified examples: 455
+	Current accuracy: 0.9518828451882845
+
+Example: 479 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91465455
+	Correctly classified examples: 456
+	Current accuracy: 0.9519832985386222
+
+Example: 480 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.87539244
+	Correctly classified examples: 457
+	Current accuracy: 0.9520833333333333
+
+Example: 481 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.9666675
+	Correctly classified examples: 458
+	Current accuracy: 0.9521829521829522
+
+Example: 482 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8217375
+	Correctly classified examples: 459
+	Current accuracy: 0.9522821576763485
+
+Example: 483 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99304396
+	Correctly classified examples: 460
+	Current accuracy: 0.9523809523809523
+
+Example: 484 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8782263
+	Correctly classified examples: 461
+	Current accuracy: 0.9524793388429752
+
+Example: 485 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9863974
+	Correctly classified examples: 462
+	Current accuracy: 0.9525773195876288
+
+Example: 486 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.71659344
+	Correctly classified examples: 463
+	Current accuracy: 0.9526748971193416
+
+Example: 487 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97455746
+	Correctly classified examples: 464
+	Current accuracy: 0.9527720739219713
+
+Example: 488 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9918324
+	Correctly classified examples: 465
+	Current accuracy: 0.9528688524590164
+
+Example: 489 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97115916
+	Correctly classified examples: 466
+	Current accuracy: 0.9529652351738241
+
+Example: 490 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.76150036
+	Correctly classified examples: 467
+	Current accuracy: 0.9530612244897959
+
+Example: 491 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98968923
+	Correctly classified examples: 468
+	Current accuracy: 0.9531568228105907
+
+Example: 492 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99531806
+	Correctly classified examples: 469
+	Current accuracy: 0.9532520325203252
+
+Example: 493 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.84277207
+	Correctly classified examples: 470
+	Current accuracy: 0.9533468559837728
+
+Example: 494 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.05062965
+	Correctly classified examples: 471
+	Current accuracy: 0.9534412955465587
+
+Example: 495 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7705
+	Correctly classified examples: 472
+	Current accuracy: 0.9535353535353536
+
+Example: 496 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7729202
+	Correctly classified examples: 473
+	Current accuracy: 0.9536290322580645
+
+Example: 497 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7482171
+	Correctly classified examples: 474
+	Current accuracy: 0.9537223340040242
+
+Example: 498 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9412106
+	Correctly classified examples: 475
+	Current accuracy: 0.9538152610441767
+
+Example: 499 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95811737
+	Correctly classified examples: 476
+	Current accuracy: 0.9539078156312625
+
+Example: 500 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9821724
+	Correctly classified examples: 477
+	Current accuracy: 0.954
+
+Example: 501 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9873553
+	Correctly classified examples: 478
+	Current accuracy: 0.9540918163672655
+
+Example: 502 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95910126
+	Correctly classified examples: 479
+	Current accuracy: 0.954183266932271
+
+Example: 503 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9832806
+	Correctly classified examples: 480
+	Current accuracy: 0.9542743538767395
+
+Example: 504 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9873573
+	Correctly classified examples: 481
+	Current accuracy: 0.9543650793650794
+
+Example: 505 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8227457
+	Correctly classified examples: 482
+	Current accuracy: 0.9544554455445544
+
+Example: 506 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.90453905
+	Correctly classified examples: 483
+	Current accuracy: 0.9545454545454546
+
+Example: 507 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9375706
+	Correctly classified examples: 484
+	Current accuracy: 0.9546351084812623
+
+Example: 508 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9591383
+	Correctly classified examples: 485
+	Current accuracy: 0.9547244094488189
+
+Example: 509 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_17_comp_leak Similarity: 0.5485701
+	Correctly classified examples: 485
+	Current accuracy: 0.9528487229862476
+
+Example: 510 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9443951
+	Correctly classified examples: 486
+	Current accuracy: 0.9529411764705882
+
+Example: 511 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98297787
+	Correctly classified examples: 487
+	Current accuracy: 0.9530332681017613
+
+Example: 512 / 914
+	Classified as: no_failure Correct class: txt16_i4 Similarity: 0.010285088
+	Correctly classified examples: 487
+	Current accuracy: 0.951171875
+
+Example: 513 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.33168173
+	Correctly classified examples: 488
+	Current accuracy: 0.9512670565302144
+
+Example: 514 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6894305
+	Correctly classified examples: 489
+	Current accuracy: 0.9513618677042801
+
+Example: 515 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9853049
+	Correctly classified examples: 490
+	Current accuracy: 0.9514563106796117
+
+Example: 516 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99003667
+	Correctly classified examples: 491
+	Current accuracy: 0.9515503875968992
+
+Example: 517 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.995891
+	Correctly classified examples: 492
+	Current accuracy: 0.9516441005802708
+
+Example: 518 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99358094
+	Correctly classified examples: 493
+	Current accuracy: 0.9517374517374517
+
+Example: 519 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9632986
+	Correctly classified examples: 494
+	Current accuracy: 0.9518304431599229
+
+Example: 520 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9937947
+	Correctly classified examples: 495
+	Current accuracy: 0.9519230769230769
+
+Example: 521 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8272708
+	Correctly classified examples: 496
+	Current accuracy: 0.9520153550863724
+
+Example: 522 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94626844
+	Correctly classified examples: 497
+	Current accuracy: 0.9521072796934866
+
+Example: 523 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99390364
+	Correctly classified examples: 498
+	Current accuracy: 0.9521988527724665
+
+Example: 524 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9475771
+	Correctly classified examples: 499
+	Current accuracy: 0.9522900763358778
+
+Example: 525 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9771995
+	Correctly classified examples: 500
+	Current accuracy: 0.9523809523809523
+
+Example: 526 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9952179
+	Correctly classified examples: 501
+	Current accuracy: 0.9524714828897338
+
+Example: 527 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99655694
+	Correctly classified examples: 502
+	Current accuracy: 0.952561669829222
+
+Example: 528 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948895
+	Correctly classified examples: 503
+	Current accuracy: 0.9526515151515151
+
+Example: 529 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98927057
+	Correctly classified examples: 504
+	Current accuracy: 0.9527410207939508
+
+Example: 530 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.0007207876
+	Correctly classified examples: 505
+	Current accuracy: 0.9528301886792453
+
+Example: 531 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97341824
+	Correctly classified examples: 506
+	Current accuracy: 0.9529190207156308
+
+Example: 532 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9511544
+	Correctly classified examples: 507
+	Current accuracy: 0.9530075187969925
+
+Example: 533 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9417867
+	Correctly classified examples: 508
+	Current accuracy: 0.9530956848030019
+
+Example: 534 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8710916
+	Correctly classified examples: 509
+	Current accuracy: 0.9531835205992509
+
+Example: 535 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.83335805
+	Correctly classified examples: 510
+	Current accuracy: 0.9532710280373832
+
+Example: 536 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.88189065
+	Correctly classified examples: 511
+	Current accuracy: 0.9533582089552238
+
+Example: 537 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.83587354
+	Correctly classified examples: 512
+	Current accuracy: 0.9534450651769087
+
+Example: 538 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.37723723
+	Correctly classified examples: 513
+	Current accuracy: 0.9535315985130112
+
+Example: 539 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9263074
+	Correctly classified examples: 514
+	Current accuracy: 0.9536178107606679
+
+Example: 540 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.86352307
+	Correctly classified examples: 515
+	Current accuracy: 0.9537037037037037
+
+Example: 541 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9949293
+	Correctly classified examples: 516
+	Current accuracy: 0.9537892791127541
+
+Example: 542 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9855617
+	Correctly classified examples: 517
+	Current accuracy: 0.9538745387453874
+
+Example: 543 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9854446
+	Correctly classified examples: 518
+	Current accuracy: 0.9539594843462247
+
+Example: 544 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9747775
+	Correctly classified examples: 519
+	Current accuracy: 0.9540441176470589
+
+Example: 545 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9872546
+	Correctly classified examples: 520
+	Current accuracy: 0.9541284403669725
+
+Example: 546 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9820616
+	Correctly classified examples: 521
+	Current accuracy: 0.9542124542124543
+
+Example: 547 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9959085
+	Correctly classified examples: 522
+	Current accuracy: 0.9542961608775137
+
+Example: 548 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99156475
+	Correctly classified examples: 523
+	Current accuracy: 0.9543795620437956
+
+Example: 549 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.79435027
+	Correctly classified examples: 523
+	Current accuracy: 0.9526411657559198
+
+Example: 550 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.73816085
+	Correctly classified examples: 524
+	Current accuracy: 0.9527272727272728
+
+Example: 551 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99367553
+	Correctly classified examples: 525
+	Current accuracy: 0.9528130671506352
+
+Example: 552 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99310136
+	Correctly classified examples: 526
+	Current accuracy: 0.9528985507246377
+
+Example: 553 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97836703
+	Correctly classified examples: 527
+	Current accuracy: 0.9529837251356239
+
+Example: 554 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.84714425
+	Correctly classified examples: 528
+	Current accuracy: 0.9530685920577617
+
+Example: 555 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93939453
+	Correctly classified examples: 529
+	Current accuracy: 0.9531531531531532
+
+Example: 556 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9508165
+	Correctly classified examples: 530
+	Current accuracy: 0.9532374100719424
+
+Example: 557 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6053616
+	Correctly classified examples: 531
+	Current accuracy: 0.9533213644524237
+
+Example: 558 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.81336045
+	Correctly classified examples: 532
+	Current accuracy: 0.953405017921147
+
+Example: 559 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9535287
+	Correctly classified examples: 533
+	Current accuracy: 0.9534883720930233
+
+Example: 560 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93079805
+	Correctly classified examples: 534
+	Current accuracy: 0.9535714285714286
+
+Example: 561 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.995213
+	Correctly classified examples: 535
+	Current accuracy: 0.9536541889483066
+
+Example: 562 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9562177
+	Correctly classified examples: 536
+	Current accuracy: 0.9537366548042705
+
+Example: 563 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9841697
+	Correctly classified examples: 537
+	Current accuracy: 0.9538188277087034
+
+Example: 564 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.0
+	Correctly classified examples: 537
+	Current accuracy: 0.9521276595744681
+
+Example: 565 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9762594
+	Correctly classified examples: 538
+	Current accuracy: 0.952212389380531
+
+Example: 566 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9676212
+	Correctly classified examples: 539
+	Current accuracy: 0.9522968197879859
+
+Example: 567 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7849165
+	Correctly classified examples: 540
+	Current accuracy: 0.9523809523809523
+
+Example: 568 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9177701
+	Correctly classified examples: 541
+	Current accuracy: 0.9524647887323944
+
+Example: 569 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99422264
+	Correctly classified examples: 542
+	Current accuracy: 0.9525483304042179
+
+Example: 570 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99105227
+	Correctly classified examples: 543
+	Current accuracy: 0.9526315789473684
+
+Example: 571 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9798545
+	Correctly classified examples: 544
+	Current accuracy: 0.9527145359019265
+
+Example: 572 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99509066
+	Correctly classified examples: 545
+	Current accuracy: 0.9527972027972028
+
+Example: 573 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96763146
+	Correctly classified examples: 546
+	Current accuracy: 0.9528795811518325
+
+Example: 574 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9886634
+	Correctly classified examples: 547
+	Current accuracy: 0.9529616724738676
+
+Example: 575 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7762399
+	Correctly classified examples: 548
+	Current accuracy: 0.9530434782608695
+
+Example: 576 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99645466
+	Correctly classified examples: 549
+	Current accuracy: 0.953125
+
+Example: 577 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9351097
+	Correctly classified examples: 550
+	Current accuracy: 0.9532062391681109
+
+Example: 578 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8764776
+	Correctly classified examples: 551
+	Current accuracy: 0.9532871972318339
+
+Example: 579 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9337626
+	Correctly classified examples: 552
+	Current accuracy: 0.9533678756476683
+
+Example: 580 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98472464
+	Correctly classified examples: 553
+	Current accuracy: 0.9534482758620689
+
+Example: 581 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9751939
+	Correctly classified examples: 554
+	Current accuracy: 0.9535283993115319
+
+Example: 582 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98540217
+	Correctly classified examples: 555
+	Current accuracy: 0.9536082474226805
+
+Example: 583 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9844722
+	Correctly classified examples: 556
+	Current accuracy: 0.9536878216123499
+
+Example: 584 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9611411
+	Correctly classified examples: 557
+	Current accuracy: 0.9537671232876712
+
+Example: 585 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9959481
+	Correctly classified examples: 558
+	Current accuracy: 0.9538461538461539
+
+Example: 586 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9883315
+	Correctly classified examples: 559
+	Current accuracy: 0.9539249146757679
+
+Example: 587 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9923057
+	Correctly classified examples: 560
+	Current accuracy: 0.9540034071550255
+
+Example: 588 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9814009
+	Correctly classified examples: 561
+	Current accuracy: 0.9540816326530612
+
+Example: 589 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9924841
+	Correctly classified examples: 562
+	Current accuracy: 0.9541595925297114
+
+Example: 590 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_low_wear Similarity: 0.0048871846
+	Correctly classified examples: 562
+	Current accuracy: 0.9525423728813559
+
+Example: 591 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.052512832
+	Correctly classified examples: 563
+	Current accuracy: 0.9526226734348562
+
+Example: 592 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.55082643
+	Correctly classified examples: 564
+	Current accuracy: 0.9527027027027027
+
+Example: 593 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97514915
+	Correctly classified examples: 565
+	Current accuracy: 0.9527824620573356
+
+Example: 594 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99576855
+	Correctly classified examples: 566
+	Current accuracy: 0.9528619528619529
+
+Example: 595 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9416432
+	Correctly classified examples: 567
+	Current accuracy: 0.9529411764705882
+
+Example: 596 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9712259
+	Correctly classified examples: 568
+	Current accuracy: 0.9530201342281879
+
+Example: 597 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95927346
+	Correctly classified examples: 569
+	Current accuracy: 0.9530988274706867
+
+Example: 598 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.74717075
+	Correctly classified examples: 570
+	Current accuracy: 0.9531772575250836
+
+Example: 599 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98526704
+	Correctly classified examples: 571
+	Current accuracy: 0.9532554257095158
+
+Example: 600 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9898142
+	Correctly classified examples: 572
+	Current accuracy: 0.9533333333333334
+
+Example: 601 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98395234
+	Correctly classified examples: 573
+	Current accuracy: 0.9534109816971714
+
+Example: 602 / 914
+	Classified as: no_failure Correct class: txt15_m1_t2_wear Similarity: 0.0016474527
+	Correctly classified examples: 573
+	Current accuracy: 0.9518272425249169
+
+Example: 603 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99551696
+	Correctly classified examples: 574
+	Current accuracy: 0.9519071310116086
+
+Example: 604 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.038008466
+	Correctly classified examples: 575
+	Current accuracy: 0.9519867549668874
+
+Example: 605 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.00042511526
+	Correctly classified examples: 575
+	Current accuracy: 0.9504132231404959
+
+Example: 606 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.9677876
+	Correctly classified examples: 575
+	Current accuracy: 0.9488448844884488
+
+Example: 607 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9954552
+	Correctly classified examples: 576
+	Current accuracy: 0.9489291598023064
+
+Example: 608 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9957928
+	Correctly classified examples: 577
+	Current accuracy: 0.9490131578947368
+
+Example: 609 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91432637
+	Correctly classified examples: 578
+	Current accuracy: 0.9490968801313628
+
+Example: 610 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8624986
+	Correctly classified examples: 579
+	Current accuracy: 0.9491803278688524
+
+Example: 611 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.82064265
+	Correctly classified examples: 580
+	Current accuracy: 0.9492635024549918
+
+Example: 612 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 1.3964142e-12
+	Correctly classified examples: 581
+	Current accuracy: 0.9493464052287581
+
+Example: 613 / 914
+	Classified as: no_failure Correct class: txt15_m1_t1_high_wear Similarity: 0.42043015
+	Correctly classified examples: 581
+	Current accuracy: 0.9477977161500816
+
+Example: 614 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9835532
+	Correctly classified examples: 582
+	Current accuracy: 0.9478827361563518
+
+Example: 615 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9300004
+	Correctly classified examples: 583
+	Current accuracy: 0.9479674796747968
+
+Example: 616 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_17_comp_leak Similarity: 0.17882927
+	Correctly classified examples: 583
+	Current accuracy: 0.9464285714285714
+
+Example: 617 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7534988
+	Correctly classified examples: 584
+	Current accuracy: 0.946515397082658
+
+Example: 618 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9988988
+	Correctly classified examples: 585
+	Current accuracy: 0.9466019417475728
+
+Example: 619 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9735581
+	Correctly classified examples: 586
+	Current accuracy: 0.9466882067851373
+
+Example: 620 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9612491
+	Correctly classified examples: 587
+	Current accuracy: 0.9467741935483871
+
+Example: 621 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99465877
+	Correctly classified examples: 588
+	Current accuracy: 0.9468599033816425
+
+Example: 622 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9543907
+	Correctly classified examples: 589
+	Current accuracy: 0.9469453376205788
+
+Example: 623 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9218179
+	Correctly classified examples: 590
+	Current accuracy: 0.9470304975922953
+
+Example: 624 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99365747
+	Correctly classified examples: 591
+	Current accuracy: 0.9471153846153846
+
+Example: 625 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.74147797
+	Correctly classified examples: 592
+	Current accuracy: 0.9472
+
+Example: 626 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98779947
+	Correctly classified examples: 593
+	Current accuracy: 0.9472843450479234
+
+Example: 627 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9127594
+	Correctly classified examples: 594
+	Current accuracy: 0.9473684210526315
+
+Example: 628 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8443334
+	Correctly classified examples: 595
+	Current accuracy: 0.947452229299363
+
+Example: 629 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.89032626
+	Correctly classified examples: 596
+	Current accuracy: 0.9475357710651828
+
+Example: 630 / 914
+	Classified as: no_failure Correct class: txt15_m1_t1_low_wear Similarity: 0.03835436
+	Correctly classified examples: 596
+	Current accuracy: 0.946031746031746
+
+Example: 631 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.90786433
+	Correctly classified examples: 597
+	Current accuracy: 0.9461172741679873
+
+Example: 632 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95957154
+	Correctly classified examples: 598
+	Current accuracy: 0.9462025316455697
+
+Example: 633 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 3.5394945e-07
+	Correctly classified examples: 598
+	Current accuracy: 0.9447077409162717
+
+Example: 634 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96422166
+	Correctly classified examples: 599
+	Current accuracy: 0.944794952681388
+
+Example: 635 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.69838315
+	Correctly classified examples: 600
+	Current accuracy: 0.9448818897637795
+
+Example: 636 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9853882
+	Correctly classified examples: 601
+	Current accuracy: 0.9449685534591195
+
+Example: 637 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9796846
+	Correctly classified examples: 602
+	Current accuracy: 0.945054945054945
+
+Example: 638 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.82216287
+	Correctly classified examples: 603
+	Current accuracy: 0.945141065830721
+
+Example: 639 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98764884
+	Correctly classified examples: 604
+	Current accuracy: 0.945226917057903
+
+Example: 640 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96349573
+	Correctly classified examples: 605
+	Current accuracy: 0.9453125
+
+Example: 641 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.07375332
+	Correctly classified examples: 606
+	Current accuracy: 0.9453978159126365
+
+Example: 642 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9215565
+	Correctly classified examples: 607
+	Current accuracy: 0.9454828660436138
+
+Example: 643 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9021065
+	Correctly classified examples: 608
+	Current accuracy: 0.9455676516329704
+
+Example: 644 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9192981
+	Correctly classified examples: 609
+	Current accuracy: 0.9456521739130435
+
+Example: 645 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9462197
+	Correctly classified examples: 610
+	Current accuracy: 0.9457364341085271
+
+Example: 646 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98030895
+	Correctly classified examples: 611
+	Current accuracy: 0.9458204334365325
+
+Example: 647 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9285553
+	Correctly classified examples: 612
+	Current accuracy: 0.9459041731066461
+
+Example: 648 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9748808
+	Correctly classified examples: 613
+	Current accuracy: 0.9459876543209876
+
+Example: 649 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9285283
+	Correctly classified examples: 614
+	Current accuracy: 0.9460708782742681
+
+Example: 650 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9927487
+	Correctly classified examples: 615
+	Current accuracy: 0.9461538461538461
+
+Example: 651 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9616268
+	Correctly classified examples: 616
+	Current accuracy: 0.946236559139785
+
+Example: 652 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9665651
+	Correctly classified examples: 617
+	Current accuracy: 0.946319018404908
+
+Example: 653 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9452469
+	Correctly classified examples: 618
+	Current accuracy: 0.9464012251148545
+
+Example: 654 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94259083
+	Correctly classified examples: 619
+	Current accuracy: 0.9464831804281345
+
+Example: 655 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99183536
+	Correctly classified examples: 620
+	Current accuracy: 0.9465648854961832
+
+Example: 656 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98794216
+	Correctly classified examples: 621
+	Current accuracy: 0.9466463414634146
+
+Example: 657 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99844706
+	Correctly classified examples: 622
+	Current accuracy: 0.9467275494672754
+
+Example: 658 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9953785
+	Correctly classified examples: 623
+	Current accuracy: 0.9468085106382979
+
+Example: 659 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98934317
+	Correctly classified examples: 624
+	Current accuracy: 0.9468892261001517
+
+Example: 660 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7693804
+	Correctly classified examples: 625
+	Current accuracy: 0.946969696969697
+
+Example: 661 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.997582
+	Correctly classified examples: 626
+	Current accuracy: 0.9470499243570348
+
+Example: 662 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.4958838
+	Correctly classified examples: 627
+	Current accuracy: 0.947129909365559
+
+Example: 663 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7827197
+	Correctly classified examples: 628
+	Current accuracy: 0.947209653092006
+
+Example: 664 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9963085
+	Correctly classified examples: 629
+	Current accuracy: 0.947289156626506
+
+Example: 665 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9951944
+	Correctly classified examples: 630
+	Current accuracy: 0.9473684210526315
+
+Example: 666 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9152819
+	Correctly classified examples: 631
+	Current accuracy: 0.9474474474474475
+
+Example: 667 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.68289256
+	Correctly classified examples: 632
+	Current accuracy: 0.9475262368815592
+
+Example: 668 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9920086
+	Correctly classified examples: 633
+	Current accuracy: 0.9476047904191617
+
+Example: 669 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.993995
+	Correctly classified examples: 634
+	Current accuracy: 0.9476831091180867
+
+Example: 670 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8294414
+	Correctly classified examples: 635
+	Current accuracy: 0.9477611940298507
+
+Example: 671 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99383134
+	Correctly classified examples: 636
+	Current accuracy: 0.9478390461997019
+
+Example: 672 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.62174547
+	Correctly classified examples: 637
+	Current accuracy: 0.9479166666666666
+
+Example: 673 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99249727
+	Correctly classified examples: 638
+	Current accuracy: 0.9479940564635958
+
+Example: 674 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98488486
+	Correctly classified examples: 639
+	Current accuracy: 0.9480712166172107
+
+Example: 675 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.76348627
+	Correctly classified examples: 640
+	Current accuracy: 0.9481481481481482
+
+Example: 676 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9677404
+	Correctly classified examples: 641
+	Current accuracy: 0.9482248520710059
+
+Example: 677 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9784234
+	Correctly classified examples: 642
+	Current accuracy: 0.948301329394387
+
+Example: 678 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.81294584
+	Correctly classified examples: 642
+	Current accuracy: 0.9469026548672567
+
+Example: 679 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9946194
+	Correctly classified examples: 643
+	Current accuracy: 0.946980854197349
+
+Example: 680 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.959079
+	Correctly classified examples: 644
+	Current accuracy: 0.9470588235294117
+
+Example: 681 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94971704
+	Correctly classified examples: 645
+	Current accuracy: 0.947136563876652
+
+Example: 682 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.85448503
+	Correctly classified examples: 646
+	Current accuracy: 0.9472140762463344
+
+Example: 683 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7806676
+	Correctly classified examples: 647
+	Current accuracy: 0.9472913616398243
+
+Example: 684 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9984762
+	Correctly classified examples: 648
+	Current accuracy: 0.9473684210526315
+
+Example: 685 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97915876
+	Correctly classified examples: 649
+	Current accuracy: 0.9474452554744526
+
+Example: 686 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 3.4090706e-05
+	Correctly classified examples: 650
+	Current accuracy: 0.9475218658892128
+
+Example: 687 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9898707
+	Correctly classified examples: 651
+	Current accuracy: 0.9475982532751092
+
+Example: 688 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99523026
+	Correctly classified examples: 652
+	Current accuracy: 0.9476744186046512
+
+Example: 689 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.83279324
+	Correctly classified examples: 653
+	Current accuracy: 0.9477503628447025
+
+Example: 690 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6785738
+	Correctly classified examples: 654
+	Current accuracy: 0.9478260869565217
+
+Example: 691 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.979039
+	Correctly classified examples: 655
+	Current accuracy: 0.9479015918958031
+
+Example: 692 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9915066
+	Correctly classified examples: 656
+	Current accuracy: 0.9479768786127167
+
+Example: 693 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99504524
+	Correctly classified examples: 657
+	Current accuracy: 0.948051948051948
+
+Example: 694 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.78563106
+	Correctly classified examples: 658
+	Current accuracy: 0.9481268011527377
+
+Example: 695 / 914
+	Classified as: no_failure Correct class: txt15_m1_t1_high_wear Similarity: 0.006296223
+	Correctly classified examples: 658
+	Current accuracy: 0.9467625899280575
+
+Example: 696 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99741864
+	Correctly classified examples: 659
+	Current accuracy: 0.9468390804597702
+
+Example: 697 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9870658
+	Correctly classified examples: 660
+	Current accuracy: 0.9469153515064562
+
+Example: 698 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8617215
+	Correctly classified examples: 661
+	Current accuracy: 0.9469914040114613
+
+Example: 699 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9927288
+	Correctly classified examples: 662
+	Current accuracy: 0.9470672389127325
+
+Example: 700 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.75848967
+	Correctly classified examples: 663
+	Current accuracy: 0.9471428571428572
+
+Example: 701 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948517
+	Correctly classified examples: 664
+	Current accuracy: 0.9472182596291013
+
+Example: 702 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9759611
+	Correctly classified examples: 665
+	Current accuracy: 0.9472934472934473
+
+Example: 703 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94693685
+	Correctly classified examples: 666
+	Current accuracy: 0.9473684210526315
+
+Example: 704 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9546351
+	Correctly classified examples: 667
+	Current accuracy: 0.9474431818181818
+
+Example: 705 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99708474
+	Correctly classified examples: 668
+	Current accuracy: 0.9475177304964539
+
+Example: 706 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9965252
+	Correctly classified examples: 669
+	Current accuracy: 0.9475920679886686
+
+Example: 707 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8004945
+	Correctly classified examples: 670
+	Current accuracy: 0.9476661951909476
+
+Example: 708 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93136865
+	Correctly classified examples: 671
+	Current accuracy: 0.9477401129943502
+
+Example: 709 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91976947
+	Correctly classified examples: 672
+	Current accuracy: 0.9478138222849083
+
+Example: 710 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91084844
+	Correctly classified examples: 673
+	Current accuracy: 0.9478873239436619
+
+Example: 711 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9597432
+	Correctly classified examples: 674
+	Current accuracy: 0.9479606188466948
+
+Example: 712 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99054104
+	Correctly classified examples: 675
+	Current accuracy: 0.9480337078651685
+
+Example: 713 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9629318
+	Correctly classified examples: 676
+	Current accuracy: 0.9481065918653576
+
+Example: 714 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9939261
+	Correctly classified examples: 677
+	Current accuracy: 0.9481792717086834
+
+Example: 715 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97608614
+	Correctly classified examples: 678
+	Current accuracy: 0.9482517482517483
+
+Example: 716 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.988599
+	Correctly classified examples: 679
+	Current accuracy: 0.9483240223463687
+
+Example: 717 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9887244
+	Correctly classified examples: 680
+	Current accuracy: 0.9483960948396095
+
+Example: 718 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9005844
+	Correctly classified examples: 681
+	Current accuracy: 0.9484679665738162
+
+Example: 719 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9353245
+	Correctly classified examples: 682
+	Current accuracy: 0.9485396383866481
+
+Example: 720 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.77112377
+	Correctly classified examples: 683
+	Current accuracy: 0.9486111111111111
+
+Example: 721 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9366948
+	Correctly classified examples: 684
+	Current accuracy: 0.9486823855755895
+
+Example: 722 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9423664
+	Correctly classified examples: 685
+	Current accuracy: 0.9487534626038782
+
+Example: 723 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9123202
+	Correctly classified examples: 686
+	Current accuracy: 0.9488243430152143
+
+Example: 724 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9962809
+	Correctly classified examples: 687
+	Current accuracy: 0.9488950276243094
+
+Example: 725 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 7.314243e-09
+	Correctly classified examples: 688
+	Current accuracy: 0.9489655172413793
+
+Example: 726 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.6633323
+	Correctly classified examples: 689
+	Current accuracy: 0.9490358126721763
+
+Example: 727 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9942057
+	Correctly classified examples: 690
+	Current accuracy: 0.9491059147180193
+
+Example: 728 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9896732
+	Correctly classified examples: 691
+	Current accuracy: 0.9491758241758241
+
+Example: 729 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.987932
+	Correctly classified examples: 692
+	Current accuracy: 0.9492455418381345
+
+Example: 730 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9932574
+	Correctly classified examples: 693
+	Current accuracy: 0.9493150684931507
+
+Example: 731 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9947301
+	Correctly classified examples: 694
+	Current accuracy: 0.9493844049247606
+
+Example: 732 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9956684
+	Correctly classified examples: 695
+	Current accuracy: 0.9494535519125683
+
+Example: 733 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9878066
+	Correctly classified examples: 696
+	Current accuracy: 0.9495225102319236
+
+Example: 734 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7448703
+	Correctly classified examples: 697
+	Current accuracy: 0.9495912806539509
+
+Example: 735 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.86347336
+	Correctly classified examples: 698
+	Current accuracy: 0.9496598639455782
+
+Example: 736 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9668464
+	Correctly classified examples: 699
+	Current accuracy: 0.9497282608695652
+
+Example: 737 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95315176
+	Correctly classified examples: 700
+	Current accuracy: 0.9497964721845319
+
+Example: 738 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8006528
+	Correctly classified examples: 701
+	Current accuracy: 0.9498644986449865
+
+Example: 739 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99555117
+	Correctly classified examples: 702
+	Current accuracy: 0.9499323410013532
+
+Example: 740 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.69067705
+	Correctly classified examples: 703
+	Current accuracy: 0.95
+
+Example: 741 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9623827
+	Correctly classified examples: 704
+	Current accuracy: 0.9500674763832658
+
+Example: 742 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9289735
+	Correctly classified examples: 705
+	Current accuracy: 0.9501347708894878
+
+Example: 743 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9941096
+	Correctly classified examples: 706
+	Current accuracy: 0.9502018842530283
+
+Example: 744 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93865234
+	Correctly classified examples: 707
+	Current accuracy: 0.9502688172043011
+
+Example: 745 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9570627
+	Correctly classified examples: 708
+	Current accuracy: 0.9503355704697987
+
+Example: 746 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96607864
+	Correctly classified examples: 709
+	Current accuracy: 0.9504021447721179
+
+Example: 747 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.77250516
+	Correctly classified examples: 710
+	Current accuracy: 0.9504685408299867
+
+Example: 748 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.9061361
+	Correctly classified examples: 711
+	Current accuracy: 0.9505347593582888
+
+Example: 749 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9867123
+	Correctly classified examples: 712
+	Current accuracy: 0.9506008010680908
+
+Example: 750 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8727805
+	Correctly classified examples: 713
+	Current accuracy: 0.9506666666666667
+
+Example: 751 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9925437
+	Correctly classified examples: 714
+	Current accuracy: 0.9507323568575233
+
+Example: 752 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97982246
+	Correctly classified examples: 715
+	Current accuracy: 0.9507978723404256
+
+Example: 753 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.2883772
+	Correctly classified examples: 716
+	Current accuracy: 0.950863213811421
+
+Example: 754 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9917048
+	Correctly classified examples: 717
+	Current accuracy: 0.9509283819628647
+
+Example: 755 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9504026
+	Correctly classified examples: 718
+	Current accuracy: 0.9509933774834437
+
+Example: 756 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.0071646655
+	Correctly classified examples: 719
+	Current accuracy: 0.951058201058201
+
+Example: 757 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9584081
+	Correctly classified examples: 720
+	Current accuracy: 0.9511228533685601
+
+Example: 758 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98342174
+	Correctly classified examples: 721
+	Current accuracy: 0.9511873350923483
+
+Example: 759 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9715297
+	Correctly classified examples: 722
+	Current accuracy: 0.9512516469038208
+
+Example: 760 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99630046
+	Correctly classified examples: 723
+	Current accuracy: 0.9513157894736842
+
+Example: 761 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8662603
+	Correctly classified examples: 724
+	Current accuracy: 0.9513797634691196
+
+Example: 762 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9599025
+	Correctly classified examples: 725
+	Current accuracy: 0.9514435695538058
+
+Example: 763 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9702667
+	Correctly classified examples: 726
+	Current accuracy: 0.9515072083879423
+
+Example: 764 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.6962725
+	Correctly classified examples: 727
+	Current accuracy: 0.9515706806282722
+
+Example: 765 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9187616
+	Correctly classified examples: 728
+	Current accuracy: 0.9516339869281045
+
+Example: 766 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.9008467
+	Correctly classified examples: 728
+	Current accuracy: 0.9503916449086162
+
+Example: 767 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99815845
+	Correctly classified examples: 729
+	Current accuracy: 0.9504563233376793
+
+Example: 768 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.946418
+	Correctly classified examples: 730
+	Current accuracy: 0.9505208333333334
+
+Example: 769 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9744875
+	Correctly classified examples: 731
+	Current accuracy: 0.9505851755526658
+
+Example: 770 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9143482
+	Correctly classified examples: 732
+	Current accuracy: 0.9506493506493506
+
+Example: 771 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95505905
+	Correctly classified examples: 733
+	Current accuracy: 0.9507133592736705
+
+Example: 772 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9974538
+	Correctly classified examples: 734
+	Current accuracy: 0.9507772020725389
+
+Example: 773 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9476046
+	Correctly classified examples: 735
+	Current accuracy: 0.9508408796895214
+
+Example: 774 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9803778
+	Correctly classified examples: 736
+	Current accuracy: 0.9509043927648578
+
+Example: 775 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99576575
+	Correctly classified examples: 737
+	Current accuracy: 0.9509677419354838
+
+Example: 776 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9328806
+	Correctly classified examples: 738
+	Current accuracy: 0.9510309278350515
+
+Example: 777 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7973287
+	Correctly classified examples: 739
+	Current accuracy: 0.9510939510939511
+
+Example: 778 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.919952
+	Correctly classified examples: 740
+	Current accuracy: 0.9511568123393316
+
+Example: 779 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9630134
+	Correctly classified examples: 741
+	Current accuracy: 0.9512195121951219
+
+Example: 780 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9960582
+	Correctly classified examples: 742
+	Current accuracy: 0.9512820512820512
+
+Example: 781 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9748201
+	Correctly classified examples: 743
+	Current accuracy: 0.9513444302176697
+
+Example: 782 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99603254
+	Correctly classified examples: 744
+	Current accuracy: 0.9514066496163683
+
+Example: 783 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97779584
+	Correctly classified examples: 745
+	Current accuracy: 0.9514687100893997
+
+Example: 784 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.87879413
+	Correctly classified examples: 746
+	Current accuracy: 0.951530612244898
+
+Example: 785 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98482805
+	Correctly classified examples: 747
+	Current accuracy: 0.9515923566878981
+
+Example: 786 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99321544
+	Correctly classified examples: 748
+	Current accuracy: 0.9516539440203562
+
+Example: 787 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97847515
+	Correctly classified examples: 749
+	Current accuracy: 0.951715374841169
+
+Example: 788 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97901046
+	Correctly classified examples: 750
+	Current accuracy: 0.9517766497461929
+
+Example: 789 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9881004
+	Correctly classified examples: 751
+	Current accuracy: 0.9518377693282636
+
+Example: 790 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98821115
+	Correctly classified examples: 752
+	Current accuracy: 0.9518987341772152
+
+Example: 791 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.000784705
+	Correctly classified examples: 753
+	Current accuracy: 0.9519595448798989
+
+Example: 792 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9913781
+	Correctly classified examples: 754
+	Current accuracy: 0.952020202020202
+
+Example: 793 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948503
+	Correctly classified examples: 755
+	Current accuracy: 0.9520807061790668
+
+Example: 794 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9941283
+	Correctly classified examples: 756
+	Current accuracy: 0.9521410579345088
+
+Example: 795 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.009752306
+	Correctly classified examples: 756
+	Current accuracy: 0.9509433962264151
+
+Example: 796 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.888293
+	Correctly classified examples: 757
+	Current accuracy: 0.9510050251256281
+
+Example: 797 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96544373
+	Correctly classified examples: 758
+	Current accuracy: 0.9510664993726474
+
+Example: 798 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99124545
+	Correctly classified examples: 759
+	Current accuracy: 0.9511278195488722
+
+Example: 799 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96333843
+	Correctly classified examples: 760
+	Current accuracy: 0.951188986232791
+
+Example: 800 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.4499072
+	Correctly classified examples: 761
+	Current accuracy: 0.95125
+
+Example: 801 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99148774
+	Correctly classified examples: 762
+	Current accuracy: 0.951310861423221
+
+Example: 802 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.79836345
+	Correctly classified examples: 763
+	Current accuracy: 0.9513715710723192
+
+Example: 803 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9932755
+	Correctly classified examples: 764
+	Current accuracy: 0.9514321295143213
+
+Example: 804 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9944112
+	Correctly classified examples: 765
+	Current accuracy: 0.9514925373134329
+
+Example: 805 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 0.21504116
+	Correctly classified examples: 765
+	Current accuracy: 0.9503105590062112
+
+Example: 806 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99788934
+	Correctly classified examples: 766
+	Current accuracy: 0.9503722084367245
+
+Example: 807 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98800933
+	Correctly classified examples: 767
+	Current accuracy: 0.9504337050805453
+
+Example: 808 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9345253
+	Correctly classified examples: 768
+	Current accuracy: 0.9504950495049505
+
+Example: 809 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9486137
+	Correctly classified examples: 769
+	Current accuracy: 0.9505562422744128
+
+Example: 810 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.044088818
+	Correctly classified examples: 769
+	Current accuracy: 0.9493827160493827
+
+Example: 811 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8816456
+	Correctly classified examples: 770
+	Current accuracy: 0.9494451294697904
+
+Example: 812 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95551264
+	Correctly classified examples: 771
+	Current accuracy: 0.9495073891625616
+
+Example: 813 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9865596
+	Correctly classified examples: 772
+	Current accuracy: 0.949569495694957
+
+Example: 814 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.17583854
+	Correctly classified examples: 772
+	Current accuracy: 0.9484029484029484
+
+Example: 815 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9948637
+	Correctly classified examples: 773
+	Current accuracy: 0.9484662576687116
+
+Example: 816 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98555404
+	Correctly classified examples: 774
+	Current accuracy: 0.9485294117647058
+
+Example: 817 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9986103
+	Correctly classified examples: 775
+	Current accuracy: 0.9485924112607099
+
+Example: 818 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93369555
+	Correctly classified examples: 776
+	Current accuracy: 0.9486552567237164
+
+Example: 819 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99483097
+	Correctly classified examples: 777
+	Current accuracy: 0.9487179487179487
+
+Example: 820 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.929704
+	Correctly classified examples: 778
+	Current accuracy: 0.948780487804878
+
+Example: 821 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.92246693
+	Correctly classified examples: 779
+	Current accuracy: 0.9488428745432399
+
+Example: 822 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95841515
+	Correctly classified examples: 780
+	Current accuracy: 0.948905109489051
+
+Example: 823 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98765635
+	Correctly classified examples: 781
+	Current accuracy: 0.9489671931956257
+
+Example: 824 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95034003
+	Correctly classified examples: 782
+	Current accuracy: 0.9490291262135923
+
+Example: 825 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.84247196
+	Correctly classified examples: 783
+	Current accuracy: 0.9490909090909091
+
+Example: 826 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95029646
+	Correctly classified examples: 784
+	Current accuracy: 0.9491525423728814
+
+Example: 827 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96577126
+	Correctly classified examples: 785
+	Current accuracy: 0.9492140266021766
+
+Example: 828 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96977454
+	Correctly classified examples: 786
+	Current accuracy: 0.9492753623188406
+
+Example: 829 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96348864
+	Correctly classified examples: 787
+	Current accuracy: 0.9493365500603136
+
+Example: 830 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97516465
+	Correctly classified examples: 788
+	Current accuracy: 0.9493975903614458
+
+Example: 831 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99513626
+	Correctly classified examples: 789
+	Current accuracy: 0.9494584837545126
+
+Example: 832 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9482478
+	Correctly classified examples: 790
+	Current accuracy: 0.9495192307692307
+
+Example: 833 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9199192
+	Correctly classified examples: 791
+	Current accuracy: 0.9495798319327731
+
+Example: 834 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9936862
+	Correctly classified examples: 792
+	Current accuracy: 0.9496402877697842
+
+Example: 835 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8148121
+	Correctly classified examples: 793
+	Current accuracy: 0.9497005988023952
+
+Example: 836 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96730185
+	Correctly classified examples: 794
+	Current accuracy: 0.9497607655502392
+
+Example: 837 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.0030566687
+	Correctly classified examples: 795
+	Current accuracy: 0.9498207885304659
+
+Example: 838 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9852856
+	Correctly classified examples: 796
+	Current accuracy: 0.9498806682577565
+
+Example: 839 / 914
+	Classified as: no_failure Correct class: txt_17_comp_leak Similarity: 0.15899901
+	Correctly classified examples: 796
+	Current accuracy: 0.9487485101311085
+
+Example: 840 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98391926
+	Correctly classified examples: 797
+	Current accuracy: 0.9488095238095238
+
+Example: 841 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9749455
+	Correctly classified examples: 798
+	Current accuracy: 0.9488703923900119
+
+Example: 842 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9932657
+	Correctly classified examples: 799
+	Current accuracy: 0.9489311163895487
+
+Example: 843 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.97656506
+	Correctly classified examples: 800
+	Current accuracy: 0.9489916963226572
+
+Example: 844 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94496655
+	Correctly classified examples: 801
+	Current accuracy: 0.9490521327014217
+
+Example: 845 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9905912
+	Correctly classified examples: 802
+	Current accuracy: 0.9491124260355029
+
+Example: 846 / 914
+	Classified as: no_failure Correct class: txt16_m3_t1_high_wear Similarity: 0.037642684
+	Correctly classified examples: 802
+	Current accuracy: 0.9479905437352246
+
+Example: 847 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9690171
+	Correctly classified examples: 803
+	Current accuracy: 0.948051948051948
+
+Example: 848 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9958168
+	Correctly classified examples: 804
+	Current accuracy: 0.9481132075471698
+
+Example: 849 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9955217
+	Correctly classified examples: 805
+	Current accuracy: 0.9481743227326266
+
+Example: 850 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.72228765
+	Correctly classified examples: 806
+	Current accuracy: 0.9482352941176471
+
+Example: 851 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98098844
+	Correctly classified examples: 807
+	Current accuracy: 0.9482961222091657
+
+Example: 852 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8353784
+	Correctly classified examples: 808
+	Current accuracy: 0.9483568075117371
+
+Example: 853 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93835604
+	Correctly classified examples: 809
+	Current accuracy: 0.9484173505275498
+
+Example: 854 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9602083
+	Correctly classified examples: 810
+	Current accuracy: 0.9484777517564403
+
+Example: 855 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.92749524
+	Correctly classified examples: 811
+	Current accuracy: 0.9485380116959065
+
+Example: 856 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9945624
+	Correctly classified examples: 812
+	Current accuracy: 0.9485981308411215
+
+Example: 857 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9960799
+	Correctly classified examples: 813
+	Current accuracy: 0.9486581096849475
+
+Example: 858 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.6654513
+	Correctly classified examples: 814
+	Current accuracy: 0.9487179487179487
+
+Example: 859 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.95447135
+	Correctly classified examples: 814
+	Current accuracy: 0.9476135040745053
+
+Example: 860 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8527261
+	Correctly classified examples: 815
+	Current accuracy: 0.9476744186046512
+
+Example: 861 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9942524
+	Correctly classified examples: 816
+	Current accuracy: 0.9477351916376306
+
+Example: 862 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9096806
+	Correctly classified examples: 817
+	Current accuracy: 0.9477958236658933
+
+Example: 863 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98226506
+	Correctly classified examples: 818
+	Current accuracy: 0.947856315179606
+
+Example: 864 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.99894196
+	Correctly classified examples: 819
+	Current accuracy: 0.9479166666666666
+
+Example: 865 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9834709
+	Correctly classified examples: 820
+	Current accuracy: 0.9479768786127167
+
+Example: 866 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9946562
+	Correctly classified examples: 821
+	Current accuracy: 0.9480369515011547
+
+Example: 867 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98706853
+	Correctly classified examples: 822
+	Current accuracy: 0.9480968858131488
+
+Example: 868 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9869162
+	Correctly classified examples: 823
+	Current accuracy: 0.9481566820276498
+
+Example: 869 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9516293
+	Correctly classified examples: 824
+	Current accuracy: 0.9482163406214039
+
+Example: 870 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9943857
+	Correctly classified examples: 825
+	Current accuracy: 0.9482758620689655
+
+Example: 871 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.94905585
+	Correctly classified examples: 826
+	Current accuracy: 0.9483352468427095
+
+Example: 872 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.00030933958
+	Correctly classified examples: 827
+	Current accuracy: 0.948394495412844
+
+Example: 873 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9940079
+	Correctly classified examples: 828
+	Current accuracy: 0.9484536082474226
+
+Example: 874 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.93995655
+	Correctly classified examples: 829
+	Current accuracy: 0.948512585812357
+
+Example: 875 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96250385
+	Correctly classified examples: 830
+	Current accuracy: 0.9485714285714286
+
+Example: 876 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.86878425
+	Correctly classified examples: 831
+	Current accuracy: 0.9486301369863014
+
+Example: 877 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9951831
+	Correctly classified examples: 832
+	Current accuracy: 0.9486887115165337
+
+Example: 878 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.78793335
+	Correctly classified examples: 833
+	Current accuracy: 0.94874715261959
+
+Example: 879 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.7800349
+	Correctly classified examples: 834
+	Current accuracy: 0.9488054607508533
+
+Example: 880 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 7.630936e-09
+	Correctly classified examples: 835
+	Current accuracy: 0.9488636363636364
+
+Example: 881 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9956607
+	Correctly classified examples: 836
+	Current accuracy: 0.9489216799091941
+
+Example: 882 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8135362
+	Correctly classified examples: 837
+	Current accuracy: 0.9489795918367347
+
+Example: 883 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.92334133
+	Correctly classified examples: 838
+	Current accuracy: 0.9490373725934315
+
+Example: 884 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.996334
+	Correctly classified examples: 839
+	Current accuracy: 0.9490950226244343
+
+Example: 885 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91510403
+	Correctly classified examples: 840
+	Current accuracy: 0.9491525423728814
+
+Example: 886 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9774446
+	Correctly classified examples: 841
+	Current accuracy: 0.9492099322799097
+
+Example: 887 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.91582656
+	Correctly classified examples: 842
+	Current accuracy: 0.9492671927846674
+
+Example: 888 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9188942
+	Correctly classified examples: 843
+	Current accuracy: 0.9493243243243243
+
+Example: 889 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.98909366
+	Correctly classified examples: 844
+	Current accuracy: 0.9493813273340832
+
+Example: 890 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9323651
+	Correctly classified examples: 845
+	Current accuracy: 0.949438202247191
+
+Example: 891 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9817187
+	Correctly classified examples: 846
+	Current accuracy: 0.9494949494949495
+
+Example: 892 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9951524
+	Correctly classified examples: 847
+	Current accuracy: 0.9495515695067265
+
+Example: 893 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96229494
+	Correctly classified examples: 848
+	Current accuracy: 0.9496080627099664
+
+Example: 894 / 914
+	Classified as: txt_17_comp_leak Correct class: txt_17_comp_leak Similarity: 0.37523723
+	Correctly classified examples: 849
+	Current accuracy: 0.9496644295302014
+
+Example: 895 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95646995
+	Correctly classified examples: 850
+	Current accuracy: 0.9497206703910615
+
+Example: 896 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.90967697
+	Correctly classified examples: 851
+	Current accuracy: 0.9497767857142857
+
+Example: 897 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9982642
+	Correctly classified examples: 852
+	Current accuracy: 0.9498327759197325
+
+Example: 898 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9882991
+	Correctly classified examples: 853
+	Current accuracy: 0.9498886414253898
+
+Example: 899 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9518225
+	Correctly classified examples: 854
+	Current accuracy: 0.949944382647386
+
+Example: 900 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8090819
+	Correctly classified examples: 855
+	Current accuracy: 0.95
+
+Example: 901 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.8063112
+	Correctly classified examples: 856
+	Current accuracy: 0.9500554938956715
+
+Example: 902 / 914
+	Classified as: no_failure Correct class: txt15_m1_t2_wear Similarity: 0.8808549
+	Correctly classified examples: 856
+	Current accuracy: 0.9490022172949002
+
+Example: 903 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.89008915
+	Correctly classified examples: 857
+	Current accuracy: 0.9490586932447398
+
+Example: 904 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.76870185
+	Correctly classified examples: 858
+	Current accuracy: 0.9491150442477876
+
+Example: 905 / 914
+	Classified as: no_failure Correct class: txt_18_comp_leak Similarity: 0.96472716
+	Correctly classified examples: 858
+	Current accuracy: 0.9480662983425414
+
+Example: 906 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_17_comp_leak Similarity: 0.016972087
+	Correctly classified examples: 858
+	Current accuracy: 0.9470198675496688
+
+Example: 907 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9557179
+	Correctly classified examples: 859
+	Current accuracy: 0.9470782800441014
+
+Example: 908 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.96478933
+	Correctly classified examples: 860
+	Current accuracy: 0.947136563876652
+
+Example: 909 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9895107
+	Correctly classified examples: 861
+	Current accuracy: 0.9471947194719472
+
+Example: 910 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9908669
+	Correctly classified examples: 862
+	Current accuracy: 0.9472527472527472
+
+Example: 911 / 914
+	Classified as: txt_18_comp_leak Correct class: txt_18_comp_leak Similarity: 0.68798524
+	Correctly classified examples: 863
+	Current accuracy: 0.9473106476399561
+
+Example: 912 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.95245504
+	Correctly classified examples: 864
+	Current accuracy: 0.9473684210526315
+
+Example: 913 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.86035234
+	Correctly classified examples: 865
+	Current accuracy: 0.9474260679079957
+
+Example: 914 / 914
+	Classified as: no_failure Correct class: no_failure Similarity: 0.9650538
+	Correctly classified examples: 866
+	Current accuracy: 0.9474835886214442
+
+----------------------------------------------------
+Final Result:
+----------------------------------------------------
+Examples classified: 914
+Correctly classified: 866
+Classification accuracy: 0.9474835886214442
+Elapsed time: 13963.82401
+----------------------------------------------------
+
+Process finished with exit code 0

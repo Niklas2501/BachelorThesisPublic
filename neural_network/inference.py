@@ -38,9 +38,9 @@ class Inference:
             self.model = rnn_models.SiameseRNN(hyper=self.hyper)
         elif model_type == 'WarpedSiameseRNN':
             self.model = rnn_models.WarpedSiameseRNN(hyper=self.hyper)
-        elif model_type == 'CNNSim':
+        elif model_type == 'SiameseCNN':
             self.model = cnn_models.CNNSim(hyper=self.hyper)
-        elif model_type == 'CNNWarpedSim':
+        elif model_type == 'WarpedSiameseCNN':
             self.model = cnn_models.CNNWarpedSim(hyper=self.hyper)
         else:
             print("Test - No model of type", model_type)

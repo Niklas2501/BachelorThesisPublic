@@ -109,7 +109,7 @@ class Configuration:
         self.architecture_variants = ['SiameseRNN', 'WarpedSiameseRNN', 'SiameseCNN', 'WarpedSiameseCNN']
 
         # selection of one of these types
-        self.architecture_type = self.architecture_variants[1]
+        self.architecture_type = self.architecture_variants[3]
 
         # select which testing type should be used (not relevant for live classification)
         # alternatives: test, pairwise
@@ -190,7 +190,7 @@ class Configuration:
         self.random_seed_index_selection = 42
 
         # the number of examples per class the training data set should be reduced to for the live classification
-        self.examples_per_class = 30
+        self.examples_per_class = 40
 
         # the k of the knn classifier used for live classification
         self.k_of_knn = 3
@@ -267,7 +267,8 @@ class Configuration:
         self.cases_folder = '../data/cases/'
 
         # path and file name to the specific model that should be used for testing and live classification
-        self.model_file = self.models_folder + 'final_best_rnn'
+        # 4774, 4597, 4875
+        self.model_file = self.models_folder + 'best_cnn'
 
         # define file names for all topics
         self.topic15File = self.pathPrefix + 'raw_data/txt15.txt'

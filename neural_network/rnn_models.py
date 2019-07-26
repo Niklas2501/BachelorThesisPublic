@@ -14,6 +14,7 @@ class RNNAbstractSimModel(AbstractSimModel):
 
     def create_encoder(self):
         with tf.variable_scope("RNNEncoder"):
+
             print('Creating RNN encoder')
             cells_list = []  # list that contains the forward-facing recurrent layers
 
