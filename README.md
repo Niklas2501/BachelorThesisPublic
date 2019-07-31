@@ -1,6 +1,6 @@
 # Bachelor Thesis Source Code
 Source code accompanying my bachelor thesis.
-/neural_network and /baseline are modified versions of the [NeuralWrap implementation](https://github.com/josifgrabocka/neuralwarp) supporting the [NeuralWrap paper](https://arxiv.org/abs/1812.08306).
+/neural_network and /baseline are modified versions of the [NeuralWarp implementation](https://github.com/josifgrabocka/neuralwarp) supporting the [NeuralWarp paper](https://arxiv.org/abs/1812.08306).
 
 ## Requirements
 The project uses the following libraries:
